@@ -991,6 +991,122 @@ img {
 }
 
 /* ===================================
+   FIX AUTO-SCROLLING CAROUSEL
+   =================================== */
+
+/* Remove scrollbar and auto-scroll from Instagram section */
+.images-wrap {
+  overflow: hidden !important;
+  display: flex !important;
+  gap: 20px !important;
+  animation: none !important;
+  flex-wrap: nowrap !important;
+}
+
+.images {
+  overflow-x: hidden !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+/* Disable scrollbar */
+.images::-webkit-scrollbar,
+.images-wrap::-webkit-scrollbar {
+  display: none !important;
+}
+
+.images,
+.images-wrap {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+/* Make images static, no auto-scroll */
+.single-image {
+  flex: 0 0 auto !important;
+  min-width: 300px !important;
+  max-width: 400px !important;
+}
+
+@media (max-width: 767px) {
+  .single-image {
+    min-width: 250px !important;
+    max-width: 300px !important;
+  }
+}
+
+/* ===================================
+   FIX MEET MEMBERS IMAGE SIZING
+   =================================== */
+
+/* Unified system for all member images */
+.member {
+  width: 100% !important;
+  height: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.member-image {
+  width: 100% !important;
+  height: 400px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  border-radius: 16px 16px 0 0 !important;
+  background: #000 !important;
+}
+
+.member-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+}
+
+/* Member wrapper grid */
+.member-wrapper {
+  display: grid !important;
+  gap: 30px !important;
+  padding: 40px 20px !important;
+  max-width: 1400px !important;
+  margin: 0 auto !important;
+}
+
+.members {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 30px !important;
+  width: 100% !important;
+}
+
+@media (max-width: 991px) {
+  .members {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+  }
+
+  .member-image {
+    height: 350px !important;
+  }
+}
+
+@media (max-width: 479px) {
+  .members {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .member-image {
+    height: 300px !important;
+  }
+
+  .member-wrapper {
+    padding: 30px 16px !important;
+  }
+}
+
+/* ===================================
    PERFORMANCE
    =================================== */
 
