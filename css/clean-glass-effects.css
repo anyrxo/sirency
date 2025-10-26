@@ -1008,16 +1008,31 @@ img {
 }
 
 /* ===================================
-   FIX AUTO-SCROLLING CAROUSEL
+   FIX AUTO-SCROLLING CAROUSEL & SPEED UP
    =================================== */
 
-/* Remove scrollbar and auto-scroll from Instagram section */
+/* Speed up scrolling animation */
+@keyframes scroll-fast {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .images-wrap {
-  overflow: hidden !important;
+  overflow: visible !important;
   display: flex !important;
   gap: 20px !important;
-  animation: none !important;
   flex-wrap: nowrap !important;
+  animation: scroll-fast 15s linear infinite !important;
+  will-change: transform;
+}
+
+/* Pause on hover */
+.images-wrap:hover {
+  animation-play-state: paused !important;
 }
 
 .images {
