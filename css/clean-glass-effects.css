@@ -564,7 +564,7 @@
 .howwework {
   background-color: #0f0f0f !important;
   background-image: linear-gradient(135deg, #000000 0%, #1a1a1a 100%) !important;
-  padding: 80px 20px !important;
+  padding: 60px 20px 60px 20px !important;
 }
 
 .workwrapper {
@@ -572,12 +572,13 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 40px;
 }
 
 .text-wrapper {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .text-wrapper .heading-80.v4 {
@@ -600,8 +601,8 @@
 .div-block-10 {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 40px;
+  gap: 16px;
+  padding: 32px 28px;
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.05) 0%,
@@ -641,7 +642,11 @@
 @media (max-width: 991px) {
   .div-block-11 {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 24px;
+  }
+
+  .workwrapper {
+    gap: 32px;
   }
 
   .text-wrapper .heading-80.v4 {
@@ -649,7 +654,8 @@
   }
 
   .div-block-10 {
-    padding: 30px;
+    padding: 28px 24px;
+    gap: 14px;
   }
 
   .div-block-10 .heading-86 {
@@ -663,15 +669,24 @@
 
 @media (max-width: 479px) {
   .howwework {
-    padding: 60px 16px !important;
+    padding: 50px 16px !important;
+  }
+
+  .workwrapper {
+    gap: 24px;
   }
 
   .text-wrapper .heading-80.v4 {
     font-size: 28px !important;
   }
 
+  .div-block-11 {
+    gap: 20px;
+  }
+
   .div-block-10 {
-    padding: 24px;
+    padding: 24px 20px;
+    gap: 12px;
   }
 
   .div-block-10 .heading-86 {
