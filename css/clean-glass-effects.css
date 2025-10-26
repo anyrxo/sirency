@@ -754,31 +754,103 @@ img {
 .infotext2 {
   max-width: 100% !important;
   overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  margin-bottom: 24px !important;
+  padding: 12px 0 !important;
+}
+
+.infotext2:last-child {
+  margin-bottom: 0 !important;
 }
 
 .infotext2 .priceheading2 {
   font-size: clamp(24px, 5vw, 42px) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.1 !important;
+}
+
+.infotext2 .pricetext {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 14px !important;
+  opacity: 0.7 !important;
+  line-height: 1.4 !important;
 }
 
 /* Fix div-block-5 stats section */
 .div-block-5 {
   display: flex !important;
   flex-direction: column !important;
-  gap: 20px !important;
-  padding: 24px !important;
+  gap: 32px !important;
+  padding: 32px 24px !important;
   overflow: hidden !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
 }
 
 /* Fix case study cards */
 .feewrap {
   max-width: 100% !important;
   overflow: hidden !important;
+  display: grid !important;
+  gap: 24px !important;
+  margin-bottom: 40px !important;
+}
+
+.feewrap.freewap-trial {
+  grid-template-columns: 1fr !important;
+  grid-template-rows: auto !important;
 }
 
 .feetext {
   max-width: 100% !important;
   overflow: hidden !important;
   padding: 32px 24px !important;
+  grid-row: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 24px !important;
+}
+
+.div-block-3 {
+  grid-row: 2 !important;
+  padding: 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
+
+.div-block-3 img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+/* Ensure proper stacking on mobile */
+@media (min-width: 768px) {
+  .feewrap.freewap-trial {
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: auto auto !important;
+  }
+
+  .feetext {
+    grid-column: 1 / -1 !important;
+    grid-row: 1 !important;
+  }
+
+  .div-block-3 {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+  }
+
+  .div-block-5 {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+  }
 }
 
 /* Fix member access section */
@@ -794,22 +866,100 @@ img {
   padding: 0 20px !important;
 }
 
+/* Fix divblock1 sections (Strategy, Testimonial) */
+.divblock1 {
+  max-width: 100% !important;
+  overflow: hidden !important;
+  margin-bottom: 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+.divblock1:last-child {
+  margin-bottom: 0 !important;
+}
+
+.divblock1 .priceheading {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.3 !important;
+}
+
+.divblock1 .pricetext {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  opacity: 0.9 !important;
+}
+
+.div-block-4 {
+  max-width: 100% !important;
+  overflow: hidden !important;
+  margin-bottom: 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+.div-block-4 .priceheading.priceheading2 {
+  font-size: clamp(20px, 4vw, 32px) !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.div-block-4 .pricetext {
+  font-size: 14px !important;
+  opacity: 0.7 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 /* Mobile fixes */
 @media (max-width: 767px) {
   .priceheading2 {
     font-size: clamp(28px, 8vw, 48px) !important;
   }
 
+  .infotext2 {
+    gap: 6px !important;
+    margin-bottom: 20px !important;
+    padding: 10px 0 !important;
+  }
+
   .infotext2 .priceheading2 {
     font-size: clamp(20px, 6vw, 36px) !important;
   }
 
+  .infotext2 .pricetext {
+    font-size: 13px !important;
+  }
+
   .feetext {
     padding: 20px 16px !important;
+    gap: 20px !important;
   }
 
   .div-block-5 {
-    padding: 20px 16px !important;
+    padding: 24px 16px !important;
+    gap: 24px !important;
+  }
+
+  .divblock1 {
+    margin-bottom: 16px !important;
+    gap: 10px !important;
+  }
+
+  .divblock1 .priceheading {
+    font-size: 16px !important;
+  }
+
+  .divblock1 .pricetext {
+    font-size: 14px !important;
   }
 
   .memberaccess {
