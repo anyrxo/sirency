@@ -560,8 +560,10 @@
    FIX HORRIBLE HOW WE WORK SECTION
    =================================== */
 
-/* Fix the terrible text layout */
+/* Fix the ugly brown background */
 .howwework {
+  background-color: #0f0f0f !important;
+  background-image: linear-gradient(135deg, #000000 0%, #1a1a1a 100%) !important;
   padding: 80px 20px !important;
 }
 
