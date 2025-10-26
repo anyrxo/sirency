@@ -4,6 +4,25 @@
    =================================== */
 
 /* ===================================
+   REMOVE ALL BROWN BACKGROUNDS
+   =================================== */
+
+/* Replace brown (#efe7dc) with black throughout site */
+[style*="background-color: #efe7dc"],
+[style*="background-color:#efe7dc"],
+.powersection,
+.memberaccess,
+.member-access-2,
+.location,
+.casestudies,
+.trip-around,
+.before-after,
+.subfee {
+  background-color: #000000 !important;
+  background-image: linear-gradient(135deg, #000000 0%, #0a0a0a 100%) !important;
+}
+
+/* ===================================
    FIX BUTTON CENTERING
    =================================== */
 
