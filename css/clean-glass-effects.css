@@ -682,6 +682,165 @@
 }
 
 /* ===================================
+   FIX HORIZONTAL SCROLL & TEXT OVERFLOW
+   =================================== */
+
+/* Prevent horizontal scroll */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  position: relative;
+}
+
+body {
+  width: 100% !important;
+}
+
+/* Fix all containers to prevent overflow */
+* {
+  box-sizing: border-box !important;
+}
+
+.page-wrapper,
+.w-container,
+.container,
+.section-container,
+.workwrapper,
+.powercontainer,
+.locationwrap,
+.subfeewrapper,
+.insta-wrapper,
+.member-wrapper,
+.column-wrapper {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+/* Fix text overflow */
+h1, h2, h3, h4, h5, h6, p, div, span {
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+  hyphens: auto !important;
+}
+
+/* Prevent images from causing overflow */
+img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Fix case study numbers that overflow */
+.priceheading2,
+.heading-87,
+.heading-88,
+.heading-81,
+.heading-82,
+.heading-84,
+.heading-86 {
+  max-width: 100% !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto !important;
+}
+
+/* Fix large numbers like $673,811.20 */
+.priceheading2 {
+  font-size: clamp(32px, 6vw, 56px) !important;
+  line-height: 1.2 !important;
+}
+
+/* Fix infotext2 containers */
+.infotext2 {
+  max-width: 100% !important;
+  overflow: hidden !important;
+}
+
+.infotext2 .priceheading2 {
+  font-size: clamp(24px, 5vw, 42px) !important;
+}
+
+/* Fix div-block-5 stats section */
+.div-block-5 {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+  padding: 24px !important;
+  overflow: hidden !important;
+}
+
+/* Fix case study cards */
+.feewrap {
+  max-width: 100% !important;
+  overflow: hidden !important;
+}
+
+.feetext {
+  max-width: 100% !important;
+  overflow: hidden !important;
+  padding: 32px 24px !important;
+}
+
+/* Fix member access section */
+.memberaccess {
+  max-width: 100% !important;
+  overflow: hidden !important;
+  padding: 60px 20px !important;
+}
+
+.div-block.center,
+.div-block.access-2div {
+  max-width: 100% !important;
+  padding: 0 20px !important;
+}
+
+/* Mobile fixes */
+@media (max-width: 767px) {
+  .priceheading2 {
+    font-size: clamp(28px, 8vw, 48px) !important;
+  }
+
+  .infotext2 .priceheading2 {
+    font-size: clamp(20px, 6vw, 36px) !important;
+  }
+
+  .feetext {
+    padding: 20px 16px !important;
+  }
+
+  .div-block-5 {
+    padding: 20px 16px !important;
+  }
+
+  .memberaccess {
+    padding: 40px 16px !important;
+  }
+
+  .div-block.center,
+  .div-block.access-2div {
+    padding: 0 16px !important;
+  }
+}
+
+@media (max-width: 479px) {
+  .priceheading2 {
+    font-size: clamp(24px, 9vw, 40px) !important;
+  }
+
+  .infotext2 .priceheading2 {
+    font-size: clamp(18px, 7vw, 32px) !important;
+  }
+
+  .feetext {
+    padding: 16px 12px !important;
+  }
+
+  .div-block-5 {
+    padding: 16px 12px !important;
+  }
+}
+
+/* ===================================
    PERFORMANCE
    =================================== */
 
