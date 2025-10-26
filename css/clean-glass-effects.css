@@ -1008,82 +1008,37 @@ img {
 }
 
 /* ===================================
-   STYLE CY SLOGAN TESTIMONIAL
+   FIX AUTO-SCROLLING CAROUSEL - VERTICAL & FAST
    =================================== */
 
-.instagram-eps .section-heading {
-  max-width: 900px !important;
-  margin: 0 auto !important;
-  font-size: 20px !important;
-  line-height: 1.7 !important;
-  text-align: center !important;
-  font-weight: 400 !important;
-  opacity: 0.95 !important;
-  padding: 0 20px !important;
-}
-
-.instagram-eps .info-inner {
-  gap: 40px !important;
-  padding: 40px 20px !important;
-}
-
-@media (max-width: 767px) {
-  .instagram-eps .section-heading {
-    font-size: 17px !important;
-    line-height: 1.6 !important;
-    max-width: 100% !important;
-  }
-
-  .instagram-eps .info-inner {
-    gap: 32px !important;
-    padding: 32px 16px !important;
-  }
-}
-
-@media (max-width: 479px) {
-  .instagram-eps .section-heading {
-    font-size: 15px !important;
-    line-height: 1.55 !important;
-  }
-
-  .instagram-eps .info-inner {
-    gap: 28px !important;
-    padding: 24px 12px !important;
-  }
-}
-
-/* ===================================
-   FIX AUTO-SCROLLING CAROUSEL & SPEED UP
-   =================================== */
-
-/* Speed up scrolling animation */
-@keyframes scroll-fast {
+/* Vertical scrolling animation - bottom to top, FAST */
+@keyframes scroll-vertical-fast {
   0% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateY(-50%);
   }
+}
+
+.images {
+  overflow: hidden !important;
+  height: 600px !important;
+  width: 100% !important;
+  position: relative !important;
 }
 
 .images-wrap {
-  overflow: visible !important;
   display: flex !important;
+  flex-direction: column !important;
   gap: 20px !important;
-  flex-wrap: nowrap !important;
-  animation: scroll-fast 15s linear infinite !important;
+  animation: scroll-vertical-fast 20s linear infinite !important;
   will-change: transform;
 }
 
 /* Pause on hover */
 .images-wrap:hover {
   animation-play-state: paused !important;
-}
-
-.images {
-  overflow-x: hidden !important;
-  width: 100% !important;
-  position: relative !important;
 }
 
 /* Disable scrollbar */
@@ -1098,16 +1053,36 @@ img {
   scrollbar-width: none !important;
 }
 
-/* Make images static, no auto-scroll */
+/* Image sizing for vertical scroll */
 .single-image {
   flex: 0 0 auto !important;
-  min-width: 300px !important;
+  width: 100% !important;
   max-width: 400px !important;
+  margin: 0 auto !important;
+}
+
+.single-image img {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 16px !important;
 }
 
 @media (max-width: 767px) {
+  .images {
+    height: 500px !important;
+  }
+
   .single-image {
-    min-width: 250px !important;
+    max-width: 350px !important;
+  }
+}
+
+@media (max-width: 479px) {
+  .images {
+    height: 400px !important;
+  }
+
+  .single-image {
     max-width: 300px !important;
   }
 }
@@ -1153,7 +1128,7 @@ img {
   display: flex !important;
   gap: 30px !important;
   flex-wrap: nowrap !important;
-  animation: scroll-members 25s linear infinite !important;
+  animation: scroll-members 15s linear infinite !important;
   will-change: transform;
   padding: 0 20px !important;
 }
