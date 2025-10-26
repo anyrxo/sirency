@@ -35,19 +35,18 @@
       // Create array of original items
       const originalItems = items.map(item => item.cloneNode(true));
 
-      // Create shuffled copy that doesn't start with the same item the original ends with
-      const shuffledItems = shuffleAvoidConsecutive(originalItems, items[items.length - 1]);
+      // Create multiple shuffled sets to ensure no consecutive duplicates
+      let lastItem = items[items.length - 1];
 
-      // Append shuffled items to create seamless infinite loop
-      shuffledItems.forEach(item => {
-        container.appendChild(item);
-      });
+      for (let i = 0; i < 3; i++) {
+        const shuffledItems = shuffleAvoidConsecutive(originalItems, lastItem);
 
-      // Add more copies to ensure truly seamless scroll
-      const secondShuffled = shuffleAvoidConsecutive(originalItems, shuffledItems[shuffledItems.length - 1]);
-      secondShuffled.forEach(item => {
-        container.appendChild(item);
-      });
+        shuffledItems.forEach(item => {
+          container.appendChild(item);
+        });
+
+        lastItem = shuffledItems[shuffledItems.length - 1];
+      }
     });
   }
 
@@ -78,7 +77,14 @@
     const img2 = item2.querySelector('img');
 
     if (img1 && img2) {
-      return img1.src === img2.src;
+      // Extract just the filename from src for comparison
+      const src1 = img1.getAttribute('src') || img1.src;
+      const src2 = img2.getAttribute('src') || img2.src;
+
+      const filename1 = src1.split('/').pop().split('?')[0];
+      const filename2 = src2.split('/').pop().split('?')[0];
+
+      return filename1 === filename2;
     }
 
     // For member cards, compare by name
@@ -86,7 +92,7 @@
     const name2 = item2.querySelector('.member-name');
 
     if (name1 && name2) {
-      return name1.textContent === name2.textContent;
+      return name1.textContent.trim() === name2.textContent.trim();
     }
 
     return false;

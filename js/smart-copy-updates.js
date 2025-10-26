@@ -57,10 +57,7 @@
     updateHTML('.trip-around .heading-87', 'Real Results. <span class="text-span-4">Real Creators.</span>');
     updateText('.trip-around .paragraph', 'They Had the Same Questions You Do. Then They Applied.');
 
-    // Testimonial
-    updateHTML('.memberaccess.member-access-2 .heading2',
-      `"I was about to quit. I was doing everything—posting constantly, replying to every DM, trying every growth strategy. And I was still making around $2k/month.<br><br>Then I found SirenCY.<br><br>I was skeptical. I'd worked with other agencies before and saw mediocre results. But I decided to give it one more shot.<br><br>Now I'm at $130k/month. And I work less than I used to.<br><br>If you're reading this wondering if it's real—it is. The only difference between where you are now and where you want to be is having the right system.<br><br>And they have it."`
-    );
+    // Testimonial - removed, keeping original content
 
     // Before/After
     updateText('.before-after .heading-88', 'Before SirenCY. After SirenCY.');
