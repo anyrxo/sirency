@@ -21,9 +21,9 @@
     updateText('.herosection .heading-80', 'You\'re Leaving Money on the Table. And You Know It.');
     updateText('.herosection .sunheading-20', 'Other Girls With Your Same Followers Are Making 6 Figures. Here\'s What They Know That You Don\'t.');
 
-    // Instagram CTA
-    updateText('.instagram-eps .section-heading', 'She\'s Not Hotter Than You. She Just Knows Something You Don\'t.');
-    updateBtn('.instagram-eps .button-primary', 'Show Me the System');
+    // Instagram CTA - CY Slogan Testimonial
+    updateHTML('.instagram-eps .section-heading', 'I was about to quit. I was doing everything—posting constantly, replying to every DM, trying every growth strategy. And I was still making around $2k/month.<br><br>Then I found SirenCY.<br><br>I was skeptical. I\'d worked with other agencies before and saw mediocre results. But I decided to give it one more shot.<br><br>Now I\'m at $130k/month. And I work less than I used to.<br><br>If you\'re reading this wondering if it\'s real—it is. The only difference between where you are now and where you want to be is having the right system.<br><br>And they have it.');
+    updateBtn('.instagram-eps .button-primary', 'Apply Now');
 
     // How We Work - Card 1
     updateText('.howwework .div-block-10:nth-child(1) .heading-86', 'You\'re One System Away from Freedom');
