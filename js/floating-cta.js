@@ -36,10 +36,7 @@
     applyButton.href = 'https://form.typeform.com/to/msWwMM4D';
     applyButton.className = 'floating-cta-button button-primary';
     applyButton.innerHTML = `
-      <span>Apply Now</span>
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="margin-left: 8px;">
-        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+      <span>I'M READY</span>
     `;
 
     applyButton.style.cssText = `
@@ -107,22 +104,10 @@
       return;
     }
 
-    // Hide when at top of page
-    const scrollPosition = window.pageYOffset;
-    const windowHeight = window.innerHeight;
-
-    if (scrollPosition < windowHeight * 0.3) {
-      floatingContainer.style.display = 'none';
-      floatingContainer.style.opacity = '0';
-      floatingContainer.style.transform = 'translateX(-50%) translateY(100px)';
-    } else {
-      floatingContainer.style.display = 'block';
-      setTimeout(() => {
-        floatingContainer.style.opacity = '1';
-        floatingContainer.style.transform = 'translateX(-50%) translateY(0)';
-      }, 10);
-    }
-
+    // ALWAYS SHOW ON MOBILE - Always visible, no hiding at top
+    floatingContainer.style.display = 'block';
+    floatingContainer.style.opacity = '1';
+    floatingContainer.style.transform = 'translateX(-50%) translateY(0)';
     floatingContainer.style.transition = 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)';
   }
 

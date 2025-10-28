@@ -1,0 +1,271 @@
+/* ===================================
+   MOBILE LAYOUT FIXES
+   SirenCY - Mobile Optimization
+   =================================== */
+
+/* ===================================
+   MOBILE NAVIGATION FIXES
+   =================================== */
+
+/* On mobile: Hide hamburger menu, center logo only */
+@media (max-width: 991px) {
+
+  /* Hide hamburger menu button */
+  .menu-button,
+  .w-nav-button {
+    display: none !important;
+  }
+
+  /* Hide navigation menu on mobile */
+  .nav-menu-wrapper,
+  .w-nav-menu {
+    display: none !important;
+  }
+
+  /* Center the navbar brand (logo) */
+  .navbar-wrapper {
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex !important;
+    width: 100% !important;
+  }
+
+  /* Center logo container */
+  .navbar-brand,
+  .w-nav-brand {
+    margin: 0 auto !important;
+    display: block !important;
+    text-align: center !important;
+  }
+
+  /* Ensure navbar container is centered */
+  .nav-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  /* Logo sizing on mobile */
+  .navbar-brand img {
+    max-width: 140px !important;
+    height: auto !important;
+  }
+}
+
+/* ===================================
+   FLOATING "I'M READY" BUTTON FIXES
+   =================================== */
+
+/* Make floating CTA always visible on mobile */
+@media (max-width: 767px) {
+
+  .floating-cta-container {
+    position: fixed !important;
+    bottom: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 9999 !important;
+    width: calc(100% - 40px) !important;
+    max-width: 400px !important;
+    display: block !important; /* Always show */
+    opacity: 1 !important;
+  }
+
+  .floating-cta-button {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    padding: 18px 32px !important;
+    background: linear-gradient(135deg, rgba(0, 204, 170, 0.95), rgba(0, 156, 130, 0.95)) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 12px 48px rgba(0, 204, 170, 0.4) !important;
+    color: white !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    text-align: center !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  }
+
+  /* Ensure button text is centered */
+  .floating-cta-button span {
+    display: block !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  /* HIDE ALL OTHER BUTTONS - Floating button is enough */
+  .button-primary:not(.floating-cta-button),
+  .btn-liquid:not(.floating-cta-button),
+  .w-button:not(.floating-cta-button),
+  .secndary-btn,
+  a.button-primary.w-button:not(.floating-cta-button) {
+    display: none !important;
+  }
+}
+
+/* ===================================
+   GENERAL MOBILE CENTERING FIXES
+   =================================== */
+
+@media (max-width: 767px) {
+
+  /* Center button containers */
+  .info-inner,
+  .div-block.center,
+  .div-block.access-2div,
+  .w-layout-blockcontainer {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  /* Center headings */
+  .heading-80,
+  .heading-81,
+  .heading-82,
+  .heading-84,
+  .heading-87,
+  .heading-88,
+  .section-heading,
+  .secondary-heading {
+    text-align: center !important;
+  }
+
+  /* Center paragraphs and text blocks */
+  .pricetext,
+  .paragraph,
+  .text1,
+  .sunheading-20 {
+    text-align: center !important;
+  }
+
+  /* Ensure proper spacing for bottom button */
+  body {
+    padding-bottom: 100px !important; /* Space for floating button */
+  }
+
+  /* Adjust footer to not overlap with floating button */
+  .footer {
+    margin-bottom: 80px !important;
+  }
+}
+
+/* ===================================
+   TABLET ADJUSTMENTS (768px - 991px)
+   =================================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Still hide menu on tablet, show centered logo */
+  .menu-button {
+    display: none !important;
+  }
+
+  .navbar-wrapper {
+    justify-content: center !important;
+  }
+
+  /* Floating button on tablet */
+  .floating-cta-container {
+    max-width: 500px !important;
+  }
+}
+
+/* ===================================
+   SPECIFIC SECTION FIXES
+   =================================== */
+
+@media (max-width: 767px) {
+
+  /* Hero section centering */
+  .hero-info {
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  /* Instagram CTA section */
+  .info-inner {
+    width: 100% !important;
+    padding: 0 20px !important;
+  }
+
+  /* Member access sections */
+  .memberaccess .heading2,
+  .member-access-2 .heading2 {
+    text-align: center !important;
+    padding: 0 20px !important;
+  }
+
+  /* Location section */
+  .div-block-7 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* Case study buttons */
+  .casestudies .w-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
+
+/* ===================================
+   FIX NAVBAR OVERLAP WITH CONTENT
+   =================================== */
+
+@media (max-width: 991px) {
+  /* Ensure navbar doesn't overlap content */
+  .navwrapper {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+  }
+
+  /* Add padding to body to prevent content hiding under navbar */
+  .page-wrapper {
+    padding-top: 80px !important;
+  }
+
+  .herosection {
+    padding-top: 160px !important; /* Extra padding for hero */
+  }
+}
+
+/* ===================================
+   ENSURE BUTTON IS ALWAYS VISIBLE
+   =================================== */
+
+/* Override any display:none from floating-cta.js on mobile */
+@media (max-width: 767px) {
+  .floating-cta-container {
+    display: block !important;
+    visibility: visible !important;
+    pointer-events: all !important;
+  }
+}
+
+/* ===================================
+   SMOOTH TRANSITIONS
+   =================================== */
+
+.floating-cta-container,
+.floating-cta-button,
+.navbar-wrapper,
+.navbar-brand {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
