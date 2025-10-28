@@ -283,15 +283,40 @@
     left: 0 !important;
     right: 0 !important;
     z-index: 1000 !important;
+    background: #000000 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Make navbar background solid black on mobile */
+  .navbar-logo-left {
+    background: #000000 !important;
+    width: 100% !important;
+  }
+
+  .navbar-logo-left-container.shadow-three {
+    background: #000000 !important;
+    border-bottom: 1px solid rgba(0, 204, 170, 0.3) !important;
+    box-shadow: 0 2px 12px rgba(0, 204, 170, 0.2) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
   }
 
   /* Add padding to body to prevent content hiding under navbar */
   .page-wrapper {
     padding-top: 80px !important;
+    background: #000000 !important;
   }
 
   .herosection {
     padding-top: 160px !important; /* Extra padding for hero */
+  }
+
+  /* Ensure body background is black */
+  body {
+    background: #000000 !important;
   }
 }
 
