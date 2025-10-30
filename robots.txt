@@ -1,33 +1,141 @@
-# SirenCY Robots.txt - Optimized for SEO
+# SirenCY Robots.txt - INSANE SEO Level
+# Every search engine. Every AI crawler. Optimized.
 
-User-agent: *
-Allow: /
-Allow: /css/
-Allow: /js/
-Allow: /images/
+# ===================================
+# PRIMARY SEARCH ENGINES (Priority Access)
+# ===================================
 
-# Disallow admin/tracking scripts
-Disallow: /admin/
-Disallow: /*.json$
-Disallow: /private/
-
-# Sitemaps
-Sitemap: https://www.sirency.com/sitemap.xml
-
-# Crawl-delay for specific bots
 User-agent: Googlebot
 Crawl-delay: 0
 Allow: /
+Disallow: /admin/
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /videos/
+
+User-agent: Googlebot-Video
+Allow: /videos/
+
+User-agent: Googlebot-News
+Allow: /
 
 User-agent: Bingbot
-Crawl-delay: 1
+Crawl-delay: 0
+Allow: /
+
+User-agent: msnbot
+Crawl-delay: 0
 Allow: /
 
 User-agent: Slurp
 Crawl-delay: 1
 Allow: /
 
-# Block bad bots
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Crawl-delay: 1
+Allow: /
+
+User-agent: YandexBot
+Crawl-delay: 1
+Allow: /
+
+User-agent: Sogou
+Crawl-delay: 2
+Allow: /
+
+# ===================================
+# AI SEARCH ENGINES (Critical for 2025+)
+# ===================================
+
+User-agent: ChatGPT-User
+Allow: /
+Crawl-delay: 0
+
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 0
+
+User-agent: Anthropic-AI
+Allow: /
+Crawl-delay: 0
+
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# ===================================
+# SOCIAL MEDIA CRAWLERS
+# ===================================
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Pinterestbot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: redditbot
+Allow: /
+
+# ===================================
+# ALLOW ALL GOOD BOTS
+# ===================================
+
+User-agent: *
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /videos/
+
+# Disallow sensitive areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /.git/
+Disallow: /.claude/
+
+# ===================================
+# SITEMAPS (Multiple for different content)
+# ===================================
+
+Sitemap: https://www.sirency.com/sitemap.xml
+Sitemap: https://www.sirency.com/sitemap-images.xml
+Sitemap: https://www.sirency.com/sitemap-videos.xml
+
+# ===================================
+# BLOCK BAD BOTS (Scrapers, Spammers)
+# ===================================
+
+# SEO Tool Crawlers (limit them)
 User-agent: AhrefsBot
 Crawl-delay: 10
 
@@ -39,3 +147,63 @@ Disallow: /
 
 User-agent: dotbot
 Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: MegaIndex
+Disallow: /
+
+# Bad Scrapers
+User-agent: SiteSnagger
+Disallow: /
+
+User-agent: WebZIP
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: Teleport
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: Offline Explorer
+Disallow: /
+
+User-agent: WebReaper
+Disallow: /
+
+# Spam/Malicious Bots
+User-agent: EmailCollector
+Disallow: /
+
+User-agent: EmailSiphon
+Disallow: /
+
+User-agent: EmailWolf
+Disallow: /
+
+User-agent: ExtractorPro
+Disallow: /
+
+User-agent: CherryPicker
+Disallow: /
+
+User-agent: CrunchBot
+Disallow: /
+
+# ===================================
+# HOST (Verify primary domain)
+# ===================================
+
+Host: www.sirency.com
+
+# ===================================
+# CRAWL BUDGET OPTIMIZATION
+# ===================================
+
+# Request-rate: 1/1s  # Uncomment if needed
+# Visit-time: 0600-2200  # Allow crawling 6am-10pm
