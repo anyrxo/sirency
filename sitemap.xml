@@ -6,13 +6,46 @@
   <!-- Homepage -->
   <url>
     <loc>https://www.sirency.com/</loc>
-    <lastmod>2025-10-26</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2025-10-28</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+
+    <!-- Hero Video -->
+    <video:video>
+      <video:thumbnail_loc>https://www.sirency.com/videos/Hero--Video-poster-00001.jpg</video:thumbnail_loc>
+      <video:title>SirenCY - Transform Your OnlyFans Success</video:title>
+      <video:description>See how SirenCY helps creators scale from $0 to $130k/month with proven strategies</video:description>
+      <video:content_loc>https://www.sirency.com/videos/Hero--Video.mp4</video:content_loc>
+      <video:duration>90</video:duration>
+      <video:publication_date>2024-12-01T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+
+    <!-- Logo Image -->
     <image:image>
       <image:loc>https://www.sirency.com/images/Logo-1-1.svg</image:loc>
-      <image:title>SirenCY - Elite OnlyFans Management Agency</image:title>
-      <image:caption>SirenCY Logo</image:caption>
+      <image:title>SirenCY - Elite OnlyFans Management Agency Logo</image:title>
+      <image:caption>SirenCY official brand logo</image:caption>
+    </image:image>
+
+    <!-- Member Images -->
+    <image:image>
+      <image:loc>https://www.sirency.com/images/Danii-Tabares-01.png</image:loc>
+      <image:title>Daniela Tabares - SirenCY Success Story</image:title>
+      <image:caption>Successful creator managed by SirenCY</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.sirency.com/images/Telari.png</image:loc>
+      <image:title>Telari Love - SirenCY Creator</image:title>
+      <image:caption>Elite creator achieving six-figure income with SirenCY</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.sirency.com/images/Chelsea.jpg</image:loc>
+      <image:title>Chelsea - $0 to $130k/month Success Story</image:title>
+      <image:caption>Chelsea's transformation with SirenCY management</image:caption>
     </image:image>
   </url>
 
