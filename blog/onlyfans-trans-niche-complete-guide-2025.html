@@ -273,8 +273,47 @@
             }
         }
     </style>
+    <style>
+        .back-button {
+            position: fixed;
+            top: 80px;
+            left: 20px;
+            z-index: 999;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .back-button:hover {
+            background: rgba(255, 23, 68, 0.9);
+            transform: translateX(-5px);
+            box-shadow: 0 4px 20px rgba(255, 23, 68, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .back-button {
+                top: 70px;
+                left: 10px;
+                padding: 10px 16px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
 </head>
 <body>
+    <a href="../blog.html" class="back-button">
+        <span>←</span> Back to Blog
+    </a>
   <!-- Navigation -->
   <div class="page-wrapper">
     <div data-w-id="3545d6ce-2bb0-51a8-de6a-043be304d1b7" class="w-layout-blockcontainer navwrapper w-container">
@@ -857,7 +896,26 @@
                 <p>Our trans creators build sustainable, profitable brands while maintaining authenticity and mental health.</p>
                 <a href="https://sirency.com/#contact" class="cta-button">Start Building Your Trans Brand →</a>
             </div>
-        </article>
+        
+        <div style="margin-top: 4rem; padding: 2rem; background: #f8f9fa; border-radius: 12px; border-left: 4px solid #ff1744;">
+            <h3 style="margin-top: 0; color: #000; font-size: 1.5rem;">Related Articles</h3>
+            <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-top: 1.5rem;">
+                <a href="onlyfans-domme-findom-niche-complete-guide-2025.html" style="text-decoration: none; color: inherit; display: block; padding: 1.2rem; background: white; border-radius: 8px; border: 1px solid #e0e0e0; transition: all 0.3s ease;">
+                    <h4 style="margin: 0 0 0.5rem 0; color: #ff1744; font-size: 1.1rem;">Domme/Findom OnlyFans Niche Guide 2025</h4>
+                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Click to read more →</p>
+                </a>
+                <a href="onlyfans-cosplay-niche-complete-guide-2025.html" style="text-decoration: none; color: inherit; display: block; padding: 1.2rem; background: white; border-radius: 8px; border: 1px solid #e0e0e0; transition: all 0.3s ease;">
+                    <h4 style="margin: 0 0 0.5rem 0; color: #ff1744; font-size: 1.1rem;">Cosplay OnlyFans Niche Guide 2025</h4>
+                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Click to read more →</p>
+                </a>
+                <a href="onlyfans-altgirl-niche-complete-guide-2025.html" style="text-decoration: none; color: inherit; display: block; padding: 1.2rem; background: white; border-radius: 8px; border: 1px solid #e0e0e0; transition: all 0.3s ease;">
+                    <h4 style="margin: 0 0 0.5rem 0; color: #ff1744; font-size: 1.1rem;">Alt Girl OnlyFans Niche Guide 2025</h4>
+                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Click to read more →</p>
+                </a>
+            </div>
+        </div>
+
+</article>
   </div>
 
   <!-- Airtable Modal, Floating CTA, Copy Protection -->

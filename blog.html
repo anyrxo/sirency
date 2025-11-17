@@ -233,6 +233,56 @@
       transform: scale(1.05);
     }
 
+    .niche-dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .niche-dropdown-content {
+      display: none;
+      position: absolute;
+      background: rgba(26, 26, 46, 0.98);
+      backdrop-filter: blur(20px);
+      min-width: 200px;
+      box-shadow: 0 8px 32px rgba(0, 204, 170, 0.3);
+      border-radius: 15px;
+      z-index: 1;
+      margin-top: 10px;
+      border: 1px solid rgba(0, 204, 170, 0.3);
+      padding: 10px;
+    }
+
+    .niche-dropdown-content.show {
+      display: block;
+    }
+
+    .niche-filter-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(0, 204, 170, 0.2);
+      color: #ffffff;
+      padding: 10px 20px;
+      text-align: left;
+      display: block;
+      width: 100%;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      font-size: 0.9rem;
+      border-radius: 8px;
+      margin-bottom: 5px;
+    }
+
+    .niche-filter-btn:last-child {
+      margin-bottom: 0;
+    }
+
+    .niche-filter-btn:hover {
+      background: rgba(0, 204, 170, 0.2);
+      border-color: #00ccaa;
+      color: #00ccaa;
+      transform: translateX(5px);
+    }
+
     @media (max-width: 768px) {
       .blog-hero h1 {
         font-size: 2.5rem;
@@ -298,6 +348,17 @@
       <button class="filter-btn" data-category="monetization">Monetization</button>
       <button class="filter-btn" data-category="scam-prevention">Scam Prevention</button>
       <button class="filter-btn" data-category="contracts">Contracts & Legal</button>
+      <div class="niche-dropdown">
+        <button class="filter-btn" data-category="niches">Creator Niches ▼</button>
+        <div class="niche-dropdown-content">
+          <button class="niche-filter-btn" data-niche="girl-next-door">Girl Next Door</button>
+          <button class="niche-filter-btn" data-niche="domme-findom">Domme/Findom</button>
+          <button class="niche-filter-btn" data-niche="trans">Trans</button>
+          <button class="niche-filter-btn" data-niche="egirl">E-Girl</button>
+          <button class="niche-filter-btn" data-niche="altgirl">Alt Girl</button>
+          <button class="niche-filter-btn" data-niche="cosplay">Cosplay</button>
+        </div>
+      </div>
     </div>
 
     <!-- Blog Grid -->
@@ -341,7 +402,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/audit-onlyfans-agency.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -350,7 +411,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/best-link-in-bio-tools-onlyfans-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -359,7 +420,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/best-onlyfans-agencies-comparison-2024.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -368,7 +429,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/best-photo-editing-apps-onlyfans-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -377,7 +438,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/fansly-vs-onlyfans-platform-comparison-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -386,7 +447,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/free-vs-paid-onlyfans-strategy.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -395,7 +456,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/how-to-choose-best-onlyfans-agency-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -404,7 +465,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/how-to-choose-onlyfans-agency-2026.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -413,7 +474,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/how-to-get-first-100-onlyfans-subscribers-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -422,7 +483,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/how-to-vet-evaluate-onlyfans-agency-checklist-2026.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -431,7 +492,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/instagram-marketing-onlyfans-growth-2024.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -440,7 +501,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/instagram-reels-onlyfans-conversion-strategy-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -449,7 +510,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-affiliate-marketing-referral-program-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -458,7 +519,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/onlyfans-agency-alternatives-diy-options-comparison-2026.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -467,7 +528,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/onlyfans-agency-benefits-pros-cons-analysis-2026.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -476,7 +537,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/onlyfans-agency-commission-how-much-agencies-charge-2026.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -485,7 +546,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/onlyfans-agency-commission-rates.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -494,7 +555,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/onlyfans-agency-contract-what-to-look-for-legal-guide-2026.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -503,7 +564,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/onlyfans-agency-cost-pricing-guide-2024.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -512,7 +573,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/onlyfans-agency-for-beginners-new-creators-guide-2026.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -521,7 +582,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/onlyfans-agency-scam-red-flags.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -530,7 +591,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/onlyfans-agency-scams-red-flags-how-to-avoid-2026.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -539,7 +600,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/onlyfans-agency-success-stories-real-results-2026.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -548,7 +609,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/onlyfans-agency-vs-solo-which-makes-more-money.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -557,7 +618,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-analytics-metrics-tracking-guide.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -566,7 +627,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-analytics-performance-tracking-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -575,7 +636,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-analytics-performance-tracking-metrics-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -584,7 +645,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-audience-growth-psychology-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -593,7 +654,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-bio-optimization-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -602,7 +663,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-branding-personal-brand-building-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -611,7 +672,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-branding-personal-brand-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -620,7 +681,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-bundles-package-deals-strategy-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -629,7 +690,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-business-scaling-team-building-hiring-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -638,7 +699,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-chatting-scripts-conversation-templates.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -647,7 +708,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-chatting-service-automation-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -656,7 +717,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-collaboration-creator-partnerships-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -665,7 +726,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-content-batching-workflow-optimization.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -674,7 +735,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-content-calendar-planning-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -683,7 +744,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-content-calendar-planning-system.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -692,7 +753,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-content-ideas-that-sell-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -701,7 +762,7 @@
     category: "monetization",
     categoryLabel: "Monetization",
     url: "blog/onlyfans-content-monetization-multiple-revenue-streams-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -710,7 +771,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-content-quality-production-guide.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -719,7 +780,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-content-strategy-30-30-30-10-rule.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -728,7 +789,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-content-strategy-planning-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -737,7 +798,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-creator-mental-health-wellness-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -746,7 +807,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-crisis-management-reputation-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -755,7 +816,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-custom-content-requests-strategy-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -764,7 +825,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-discord-marketing-community-building-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -773,7 +834,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-dm-chatting-revenue-strategies.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -782,7 +843,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-dm-messaging-strategy-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -791,7 +852,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-email-marketing-strategy-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -800,7 +861,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-equipment-photography-setup-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -809,7 +870,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-fan-engagement-retention-strategy-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -818,7 +879,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-future-trends-2026-predictions.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -827,7 +888,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/onlyfans-growth-strategies-without-agency-diy-2026.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -836,7 +897,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-instagram-marketing-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -845,7 +906,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-international-creator-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -854,7 +915,7 @@
     category: "contracts",
     categoryLabel: "Contracts & Legal",
     url: "blog/onlyfans-legal-compliance-regulations-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -863,7 +924,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-livestreaming-strategy-live-content-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -872,7 +933,7 @@
     category: "contracts",
     categoryLabel: "Contracts & Legal",
     url: "blog/onlyfans-llc-legal-business-setup-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -881,7 +942,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/onlyfans-management-agency-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -890,7 +951,7 @@
     category: "monetization",
     categoryLabel: "Monetization",
     url: "blog/onlyfans-monetization-strategies-maximize-income-2026.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -899,7 +960,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-niche-selection-most-profitable-niches-2026.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -908,7 +969,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-niche-selection-profitable-niches-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -917,7 +978,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-platform-features-optimization-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -926,7 +987,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-platform-features-optimization-guide.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -935,7 +996,7 @@
     category: "monetization",
     categoryLabel: "Monetization",
     url: "blog/onlyfans-ppv-pay-per-view-strategy-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -944,7 +1005,7 @@
     category: "monetization",
     categoryLabel: "Monetization",
     url: "blog/onlyfans-ppv-strategy-pricing-psychology.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -953,7 +1014,7 @@
     category: "monetization",
     categoryLabel: "Monetization",
     url: "blog/onlyfans-pricing-optimization-strategy.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -962,7 +1023,7 @@
     category: "monetization",
     categoryLabel: "Monetization",
     url: "blog/onlyfans-pricing-strategy-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -971,7 +1032,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-promotion-marketing-strategies-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -980,7 +1041,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-promotion-strategies-all-platforms-2026.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -989,7 +1050,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-reddit-marketing-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -998,7 +1059,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-safety-security-privacy-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1007,7 +1068,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-seo-discoverability-optimization-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1016,7 +1077,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-snapchat-premium-marketing-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1025,7 +1086,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-subscriber-demographics-targeting-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1034,7 +1095,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-subscriber-engagement-psychology.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1043,7 +1104,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-subscriber-retention-loyalty-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1052,7 +1113,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-subscriber-retention-reduce-churn-2026.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1061,7 +1122,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-subscriber-retention-strategies.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1070,7 +1131,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-tax-deductions-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1079,7 +1140,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-taxes-deductions-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1088,7 +1149,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-telegram-marketing-private-channels-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1097,7 +1158,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-tiktok-marketing-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1106,7 +1167,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-twitter-x-marketing-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1115,7 +1176,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-video-content-filming-guide-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1124,7 +1185,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/onlyfans-youtube-marketing-strategy-2025.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1133,7 +1194,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/personal-branding-onlyfans-creators-2024.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1142,7 +1203,7 @@
     category: "ftl",
     categoryLabel: "Free Trial Links",
     url: "blog/psychology-free-trial-links.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1151,7 +1212,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/reddit-marketing-onlyfans-complete-guide.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1160,7 +1221,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/reddit-marketing-onlyfans-growth-2024.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1169,7 +1230,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/rize-onlyfans-agency-review-vs-alternatives.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1178,7 +1239,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/signing-onlyfans-agency-checklist.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1187,7 +1248,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/tiktok-onlyfans-funnel-strategy-2024.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1196,7 +1257,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/twitter-x-marketing-onlyfans-growth.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1205,7 +1266,7 @@
     category: "ftl",
     categoryLabel: "Free Trial Links",
     url: "blog/ultimate-guide-free-trial-links-ftl.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1214,7 +1275,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/what-does-onlyfans-agency-do-complete-services-guide.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1223,7 +1284,7 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/when-to-hire-onlyfans-agency-timing-guide-2026.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1232,7 +1293,7 @@
     category: "strategy",
     categoryLabel: "Growth Strategy",
     url: "blog/why-models-stuck-3k-month.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
@@ -1241,61 +1302,67 @@
     category: "agency",
     categoryLabel: "Agency Insights",
     url: "blog/why-onlyfans-models-need-agency.html",
-    date: "Nov 15, 2024",
+    date: "Nov 2025",
     readTime: "10 min"
   },
   {
     title: "Girl Next Door OnlyFans Niche: Complete Strategy Guide 2025",
     excerpt: "Master the Girl Next Door OnlyFans niche with bio examples, messaging scripts, pricing strategies, and content types. Learn how to build authentic con...",
-    category: "strategy",
-    categoryLabel: "Growth Strategy",
+    category: "niches",
+    categoryLabel: "Creator Niches",
+    niche: "girl-next-door",
     url: "blog/onlyfans-girl-next-door-niche-complete-guide-2025.html",
-    date: "Jan 15, 2025",
+    date: "Nov 2025",
     readTime: "18 min"
   },
   {
     title: "Domme/Findom OnlyFans Niche: Complete Strategy Guide 2025",
     excerpt: "Master the Domme/Findom OnlyFans niche with command language, tribute structures, SPH scripts, and financial domination psychology. Learn how to domin...",
-    category: "strategy",
-    categoryLabel: "Growth Strategy",
+    category: "niches",
+    categoryLabel: "Creator Niches",
+    niche: "domme-findom",
     url: "blog/onlyfans-domme-findom-niche-complete-guide-2025.html",
-    date: "Jan 15, 2025",
+    date: "Nov 2025",
     readTime: "22 min"
   },
   {
     title: "Trans OnlyFans Niche: Complete Strategy Guide 2025",
     excerpt: "Comprehensive Trans creator guide for OnlyFans with respectful bio examples, boundary-setting templates, pronoun usage, and audience psychology. Learn...",
-    category: "strategy",
-    categoryLabel: "Growth Strategy",
+    category: "niches",
+    categoryLabel: "Creator Niches",
+    niche: "trans",
     url: "blog/onlyfans-trans-niche-complete-guide-2025.html",
-    date: "Jan 15, 2025",
+    date: "Nov 2025",
     readTime: "20 min"
   },
   {
     title: "E-Girl OnlyFans Niche: Complete Strategy Guide 2025",
     excerpt: "Master the E-Girl/Gamer Girl OnlyFans niche with uwu language, gaming culture integration, anime aesthetics, and bratty personality scripts. Learn how...",
-    category: "strategy",
-    categoryLabel: "Growth Strategy",
+    category: "niches",
+    categoryLabel: "Creator Niches",
+    niche: "egirl",
     url: "blog/onlyfans-egirl-niche-complete-guide-2025.html",
-    date: "Jan 15, 2025",
+    date: "Nov 2025",
     readTime: "24 min"
   },
   {
     title: "Alt Girl OnlyFans Niche: Complete Strategy Guide 2025",
     excerpt: "Complete Alt Girl OnlyFans guide covering goth, punk, tattooed, and alternative creators. Learn bio examples, pricing strategies, subcultural authenti...",
-    category: "strategy",
-    categoryLabel: "Growth Strategy",
+    category: "niches",
+    categoryLabel: "Creator Niches",
+    niche: "altgirl",
     url: "blog/onlyfans-altgirl-niche-complete-guide-2025.html",
-    date: "Jan 15, 2025",
+    date: "Nov 2025",
     readTime: "26 min"
   },
   {
     title: "Cosplay OnlyFans Niche: Complete Strategy Guide 2025",
     excerpt: "Master the Cosplay OnlyFans niche with character selection strategies, bio examples, messaging scripts, and pricing for anime, gaming, and comic chara...",
-    category: "strategy",
-    categoryLabel: "Growth Strategy",
+    category: "niches",
+    categoryLabel: "Creator Niches",
+    niche: "cosplay",
     url: "blog/onlyfans-cosplay-niche-complete-guide-2025.html",
-    date: "Jan 15, 2025",
+    date: "Nov 2025",
     readTime: "28 min"
   }
 ];
@@ -1333,13 +1400,36 @@
 
       function initFilters() {
         const filterBtns = document.querySelectorAll('.filter-btn');
+        const nicheDropdownBtn = document.querySelector('[data-category="niches"]');
+        const nicheDropdownContent = document.querySelector('.niche-dropdown-content');
+        const nicheFilterBtns = document.querySelectorAll('.niche-filter-btn');
 
+        // Toggle dropdown
+        if (nicheDropdownBtn) {
+          nicheDropdownBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            nicheDropdownContent.classList.toggle('show');
+          });
+        }
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function() {
+          if (nicheDropdownContent) {
+            nicheDropdownContent.classList.remove('show');
+          }
+        });
+
+        // Handle main category filters
         filterBtns.forEach(btn => {
           btn.addEventListener('click', function() {
+            const category = this.getAttribute('data-category');
+
+            if (category === 'niches') {
+              return; // Handled by dropdown
+            }
+
             filterBtns.forEach(b => b.classList.remove('active'));
             this.classList.add('active');
-
-            const category = this.getAttribute('data-category');
 
             if (category === 'all') {
               renderBlogPosts(blogPosts);
@@ -1347,6 +1437,25 @@
               const filtered = blogPosts.filter(post => post.category === category);
               renderBlogPosts(filtered);
             }
+          });
+        });
+
+        // Handle niche dropdown filters
+        nicheFilterBtns.forEach(btn => {
+          btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const niche = this.getAttribute('data-niche');
+
+            // Activate the Creator Niches button
+            filterBtns.forEach(b => b.classList.remove('active'));
+            nicheDropdownBtn.classList.add('active');
+
+            // Filter by niche
+            const filtered = blogPosts.filter(post => post.niche === niche);
+            renderBlogPosts(filtered);
+
+            // Close dropdown
+            nicheDropdownContent.classList.remove('show');
           });
         });
       }
