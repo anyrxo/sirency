@@ -952,15 +952,11 @@
     </div>
 
     <script>
-        // Scroll to top functionality
-        window.addEventListener('scroll', function() {
-            const scrollBtn = document.querySelector('.scroll-to-top');
-            if (window.pageYOffset > 300) {
-                scrollBtn.classList.add('visible');
-            } else {
-                scrollBtn.classList.remove('visible');
-            }
-        });
+        // Scroll-to-top button always visible
+        const scrollBtn = document.querySelector('.scroll-to-top');
+        if (scrollBtn) {
+            scrollBtn.classList.add('visible');
+        }
 
         function scrollToTop() {
             window.scrollTo({
