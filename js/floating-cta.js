@@ -118,7 +118,7 @@
       } else {
         console.error('window.openAirtableForm is not defined!');
         // Fallback: open form in new tab
-        window.open('https://airtable.com/shrmsWwMM4DQ8Zj1r', '_blank');
+        window.open('https://airtable.com/appgyJik1KlBvb7eW/paglH2xDlKkCClyMy/form', '_blank');
       }
     });
 
