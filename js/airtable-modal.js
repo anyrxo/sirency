@@ -6,8 +6,8 @@
 (function() {
   'use strict';
 
-  // Airtable form URL
-  const AIRTABLE_FORM_URL = 'https://airtable.com/embed/appQ02O627V58qniG/pagDuERKbidS67V6A/form';
+  // Airtable form URL - direct form link works better than /embed/ format
+  const AIRTABLE_FORM_URL = 'https://airtable.com/appQ02O627V58qniG/pagDuERKbidS67V6A/form';
 
   // Create modal HTML
   function createModal() {
@@ -20,14 +20,17 @@
             <p class="airtable-modal-subtitle">Join the creators scaling to six figures and beyond</p>
           </div>
           <div class="airtable-iframe-wrapper">
+            <div class="iframe-loading" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #00ccaa; font-size: 18px;">Loading form...</div>
             <iframe
+              id="airtableIframe"
               class="airtable-embed"
               src="${AIRTABLE_FORM_URL}"
               frameborder="0"
               onmousewheel=""
               width="100%"
               height="100%"
-              style="background: transparent;">
+              allow="camera; microphone; geolocation; encrypted-media"
+              style="background: transparent; border: none;">
             </iframe>
           </div>
         </div>
@@ -36,6 +39,26 @@
 
     // Insert modal into DOM
     document.body.insertAdjacentHTML('beforeend', modalHTML);
+
+    // Hide loading indicator when iframe loads
+    const iframe = document.getElementById('airtableIframe');
+    const loadingIndicator = document.querySelector('.iframe-loading');
+
+    if (iframe) {
+      iframe.addEventListener('load', function() {
+        console.log('✅ Airtable form loaded successfully');
+        if (loadingIndicator) {
+          loadingIndicator.style.display = 'none';
+        }
+      });
+
+      iframe.addEventListener('error', function() {
+        console.error('❌ Failed to load Airtable form');
+        if (loadingIndicator) {
+          loadingIndicator.innerHTML = 'Form failed to load. <a href="https://airtable.com/appQ02O627V58qniG/pagDuERKbidS67V6A/form" target="_blank" style="color: #00ccaa; text-decoration: underline;">Open in new tab</a>';
+        }
+      });
+    }
   }
 
   // Open modal

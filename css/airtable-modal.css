@@ -178,6 +178,30 @@
   border-radius: 16px;
 }
 
+/* Loading indicator */
+.iframe-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #00ccaa;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  z-index: 10;
+  font-family: 'Poppins', sans-serif;
+}
+
+.iframe-loading a {
+  color: #00ccaa;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.iframe-loading a:hover {
+  color: #00ff88;
+}
+
 /* Loading animation */
 .airtable-iframe-wrapper::before {
   content: '';
