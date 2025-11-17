@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Main Images -->
+  <url>
+    <loc>https://sirency.com/</loc>
+    <image:image>
+      <image:loc>https://sirency.com/images/Logo-1-1.svg</image:loc>
+      <image:caption>SirenCY - Premium OnlyFans Agency</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sirency.com/images/favicon.png</image:loc>
+      <image:caption>SirenCY Icon</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sirency.com/images/webclip.png</image:loc>
+      <image:caption>SirenCY Webclip</image:caption>
+    </image:image>
+  </url>
+</urlset>
