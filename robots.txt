@@ -124,12 +124,15 @@ Disallow: /.git/
 Disallow: /.claude/
 
 # ===================================
-# SITEMAPS (Multiple for different content)
+# SITEMAPS
 # ===================================
 
 Sitemap: https://www.sirency.com/sitemap.xml
 Sitemap: https://www.sirency.com/sitemap-images.xml
 Sitemap: https://www.sirency.com/sitemap-videos.xml
+
+# Note: This is a static site. WordPress-style sitemaps
+# (category-sitemap.xml, post-sitemap.xml, etc.) do not exist.
 
 # ===================================
 # BLOCK BAD BOTS (Scrapers, Spammers)
