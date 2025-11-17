@@ -386,7 +386,7 @@
             <ul>
                 <li><strong>By content type:</strong> "Photos," "Videos," "Collaborations," "Behind-the-Scenes," "Holiday Specials"</li>
                 <li><strong>By theme/niche:</strong> "Lingerie," "Cosplay," "Fitness," "Outdoor," "Custom Requests"</li>
-                <li><strong>By date:</strong> "January 2025," "February 2025," or "Q1 2025," "Q2 2025"</li>
+                <li><strong>By date:</strong> "November 2025," "February 2025," or "Q1 2025," "Q2 2025"</li>
                 <li><strong>By tier:</strong> "All Subscribers," "VIP Exclusive," "Platinum Members Only"</li>
                 <li><strong>By performance:</strong> "Top Performers" (highest engagement), "Hidden Gems" (underperformed initially)</li>
             </ul>
@@ -847,14 +847,11 @@
 
     <script>
         // Scroll to top functionality
-        window.addEventListener('scroll', function() {
-            const scrollBtn = document.querySelector('.scroll-to-top');
-            if (scrollBtn && window.pageYOffset > 300) {
-                scrollBtn.classList.add('visible');
-            } else if (scrollBtn) {
-                scrollBtn.classList.remove('visible');
-            }
-        });
+        // Scroll-to-top button always visible
+        const scrollBtn = document.querySelector('.scroll-to-top');
+        if (scrollBtn) {
+            scrollBtn.classList.add('visible');
+        }
 
         function scrollToTop() {
             window.scrollTo({
