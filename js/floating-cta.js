@@ -17,7 +17,7 @@
       return;
     }
 
-    // Create container
+    // Create container with 3 buttons: Home | I'M READY | Blog
     const floatingContainer = document.createElement('div');
     floatingContainer.className = 'floating-cta-container';
     floatingContainer.style.cssText = `
@@ -27,17 +27,53 @@
       transform: translateX(-50%);
       z-index: 1000;
       width: calc(100% - 40px);
-      max-width: 600px;
+      max-width: 700px;
       display: none;
+      gap: 12px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
     `;
 
-    // Create button
+    // Home button (left)
+    const homeButton = document.createElement('a');
+    homeButton.href = '../index.html';
+    homeButton.className = 'nav-button';
+    homeButton.innerHTML = `<span style="font-size: 20px;">🏠</span>`;
+    homeButton.style.cssText = `
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      background: rgba(26, 26, 46, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(0, 204, 170, 0.3);
+      border-radius: 50%;
+      color: #00ccaa;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    `;
+
+    homeButton.addEventListener('mouseenter', () => {
+      homeButton.style.transform = 'translateY(-4px) scale(1.05)';
+      homeButton.style.borderColor = 'rgba(0, 204, 170, 0.6)';
+      homeButton.style.boxShadow = '0 12px 32px rgba(0, 204, 170, 0.4)';
+    });
+
+    homeButton.addEventListener('mouseleave', () => {
+      homeButton.style.transform = 'translateY(0) scale(1)';
+      homeButton.style.borderColor = 'rgba(0, 204, 170, 0.3)';
+      homeButton.style.boxShadow = '0 8px 24px rgba(0, 0, 0, 0.4)';
+    });
+
+    // I'M READY button (center)
     const applyButton = document.createElement('a');
     applyButton.href = '#';
     applyButton.className = 'floating-cta-button button-primary';
-    applyButton.innerHTML = `
-      <span>I'M READY</span>
-    `;
+    applyButton.innerHTML = `<span>I'M READY</span>`;
 
     // Open Airtable modal on click
     applyButton.addEventListener('click', function(e) {
@@ -51,7 +87,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 100%;
+      flex: 1;
       padding: 18px 32px;
       background: linear-gradient(135deg, rgba(0, 204, 170, 0.95), rgba(0, 156, 130, 0.95));
       backdrop-filter: blur(20px);
@@ -89,7 +125,44 @@
       applyButton.style.transform = 'scale(1)';
     });
 
+    // Blog button (right)
+    const blogButton = document.createElement('a');
+    blogButton.href = '../blog.html';
+    blogButton.className = 'nav-button';
+    blogButton.innerHTML = `<span style="font-size: 20px;">📝</span>`;
+    blogButton.style.cssText = `
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      background: rgba(26, 26, 46, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(0, 204, 170, 0.3);
+      border-radius: 50%;
+      color: #00ccaa;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    `;
+
+    blogButton.addEventListener('mouseenter', () => {
+      blogButton.style.transform = 'translateY(-4px) scale(1.05)';
+      blogButton.style.borderColor = 'rgba(0, 204, 170, 0.6)';
+      blogButton.style.boxShadow = '0 12px 32px rgba(0, 204, 170, 0.4)';
+    });
+
+    blogButton.addEventListener('mouseleave', () => {
+      blogButton.style.transform = 'translateY(0) scale(1)';
+      blogButton.style.borderColor = 'rgba(0, 204, 170, 0.3)';
+      blogButton.style.boxShadow = '0 8px 24px rgba(0, 0, 0, 0.4)';
+    });
+
+    // Add all buttons to container
+    floatingContainer.appendChild(homeButton);
     floatingContainer.appendChild(applyButton);
+    floatingContainer.appendChild(blogButton);
     document.body.appendChild(floatingContainer);
 
     return floatingContainer;
