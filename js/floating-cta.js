@@ -33,11 +33,19 @@
 
     // Create button
     const applyButton = document.createElement('a');
-    applyButton.href = 'https://form.typeform.com/to/msWwMM4D';
+    applyButton.href = '#';
     applyButton.className = 'floating-cta-button button-primary';
     applyButton.innerHTML = `
       <span>I'M READY</span>
     `;
+
+    // Open Airtable modal on click
+    applyButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      if (typeof window.openAirtableForm === 'function') {
+        window.openAirtableForm();
+      }
+    });
 
     applyButton.style.cssText = `
       display: flex;
