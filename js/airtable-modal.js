@@ -6,8 +6,8 @@
 (function() {
   'use strict';
 
-  // Airtable form URL - direct form link works better than /embed/ format
-  const AIRTABLE_FORM_URL = 'https://airtable.com/appQ02O627V58qniG/pagDuERKbidS67V6A/form';
+  // Airtable form URL - using embed format for iframe compatibility
+  const AIRTABLE_FORM_URL = 'https://airtable.com/embed/appQ02O627V58qniG/pagDuERKbidS67V6A/form?backgroundColor=purple';
 
   // Create modal HTML
   function createModal() {
