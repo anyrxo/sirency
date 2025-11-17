@@ -206,81 +206,136 @@
 
     .category-filter {
       display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
       justify-content: center;
       margin-bottom: 40px;
     }
 
-    .filter-btn {
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(0, 204, 170, 0.3);
-      color: #ffffff;
-      padding: 12px 24px;
-      border-radius: 30px;
+    .category-dropdown {
+      position: relative;
+      min-width: 280px;
+    }
+
+    .category-dropdown-btn {
+      width: 100%;
+      background: rgba(26, 26, 46, 0.95);
+      backdrop-filter: blur(20px);
+      border: 2px solid rgba(0, 204, 170, 0.4);
+      color: #00ccaa;
+      padding: 16px 24px;
+      border-radius: 50px;
       cursor: pointer;
       transition: all 0.3s ease;
-      font-weight: 600;
-      font-size: 0.95rem;
+      font-weight: 700;
+      font-size: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
-    .filter-btn:hover,
-    .filter-btn.active {
-      background: rgba(0, 204, 170, 0.2);
+    .category-dropdown-btn:hover {
+      background: rgba(0, 204, 170, 0.15);
       border-color: #00ccaa;
-      color: #00ccaa;
-      transform: scale(1.05);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 204, 170, 0.3);
     }
 
-    .niche-dropdown {
-      position: relative;
-      display: inline-block;
+    .dropdown-arrow {
+      transition: transform 0.3s ease;
+      font-size: 0.8rem;
     }
 
-    .niche-dropdown-content {
+    .category-dropdown.open .dropdown-arrow {
+      transform: rotate(180deg);
+    }
+
+    .category-dropdown-content {
       display: none;
       position: absolute;
+      top: calc(100% + 10px);
+      left: 0;
+      right: 0;
       background: rgba(26, 26, 46, 0.98);
-      backdrop-filter: blur(20px);
-      min-width: 200px;
-      box-shadow: 0 8px 32px rgba(0, 204, 170, 0.3);
-      border-radius: 15px;
-      z-index: 1;
-      margin-top: 10px;
-      border: 1px solid rgba(0, 204, 170, 0.3);
-      padding: 10px;
+      backdrop-filter: blur(30px);
+      border: 2px solid rgba(0, 204, 170, 0.4);
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(0, 204, 170, 0.3);
+      z-index: 1000;
+      padding: 12px;
+      max-height: 500px;
+      overflow-y: auto;
     }
 
-    .niche-dropdown-content.show {
+    .category-dropdown.open .category-dropdown-content {
       display: block;
+      animation: dropdownSlide 0.3s ease;
     }
 
-    .niche-filter-btn {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(0, 204, 170, 0.2);
-      color: #ffffff;
-      padding: 10px 20px;
+    @keyframes dropdownSlide {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .category-option {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid transparent;
+      color: rgba(255, 255, 255, 0.8);
+      padding: 14px 20px;
       text-align: left;
       display: block;
-      width: 100%;
       cursor: pointer;
       transition: all 0.3s ease;
       font-weight: 500;
-      font-size: 0.9rem;
-      border-radius: 8px;
-      margin-bottom: 5px;
+      font-size: 0.95rem;
+      border-radius: 12px;
+      margin-bottom: 6px;
     }
 
-    .niche-filter-btn:last-child {
+    .category-option:last-child {
       margin-bottom: 0;
     }
 
-    .niche-filter-btn:hover {
+    .category-option:hover {
+      background: rgba(0, 204, 170, 0.15);
+      border-color: rgba(0, 204, 170, 0.4);
+      color: #00ccaa;
+      transform: translateX(6px);
+    }
+
+    .category-option.active {
       background: rgba(0, 204, 170, 0.2);
       border-color: #00ccaa;
       color: #00ccaa;
-      transform: translateX(5px);
+      font-weight: 600;
+    }
+
+    .niche-option {
+      padding-left: 32px;
+      font-size: 0.9rem;
+    }
+
+    .category-divider {
+      height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(0, 204, 170, 0.3), transparent);
+      margin: 12px 0;
+    }
+
+    .category-group-label {
+      color: #00ccaa;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 8px 20px 4px;
+      opacity: 0.7;
     }
 
     @media (max-width: 768px) {
@@ -293,8 +348,18 @@
         gap: 20px;
       }
 
-      .category-filter {
-        flex-direction: column;
+      .category-dropdown {
+        min-width: 100%;
+        max-width: 100%;
+      }
+
+      .category-dropdown-btn {
+        font-size: 0.9rem;
+        padding: 14px 20px;
+      }
+
+      .category-dropdown-content {
+        max-height: 400px;
       }
     }
   </style>
@@ -339,24 +404,29 @@
 
   <!-- Blog Content -->
   <div class="blog-container">
-    <!-- Category Filters -->
+    <!-- Category Filter Dropdown -->
     <div class="category-filter">
-      <button class="filter-btn active" data-category="all">All Posts</button>
-      <button class="filter-btn" data-category="agency">Agency Insights</button>
-      <button class="filter-btn" data-category="ftl">Free Trial Links</button>
-      <button class="filter-btn" data-category="strategy">Growth Strategy</button>
-      <button class="filter-btn" data-category="monetization">Monetization</button>
-      <button class="filter-btn" data-category="scam-prevention">Scam Prevention</button>
-      <button class="filter-btn" data-category="contracts">Contracts & Legal</button>
-      <div class="niche-dropdown">
-        <button class="filter-btn" data-category="niches">Creator Niches ▼</button>
-        <div class="niche-dropdown-content">
-          <button class="niche-filter-btn" data-niche="girl-next-door">Girl Next Door</button>
-          <button class="niche-filter-btn" data-niche="domme-findom">Domme/Findom</button>
-          <button class="niche-filter-btn" data-niche="trans">Trans</button>
-          <button class="niche-filter-btn" data-niche="egirl">E-Girl</button>
-          <button class="niche-filter-btn" data-niche="altgirl">Alt Girl</button>
-          <button class="niche-filter-btn" data-niche="cosplay">Cosplay</button>
+      <div class="category-dropdown">
+        <button class="category-dropdown-btn">
+          <span id="selectedCategory">All Posts</span>
+          <span class="dropdown-arrow">▼</span>
+        </button>
+        <div class="category-dropdown-content">
+          <button class="category-option active" data-category="all">All Posts</button>
+          <button class="category-option" data-category="agency">Agency Insights</button>
+          <button class="category-option" data-category="ftl">Free Trial Links</button>
+          <button class="category-option" data-category="strategy">Growth Strategy</button>
+          <button class="category-option" data-category="monetization">Monetization</button>
+          <button class="category-option" data-category="scam-prevention">Scam Prevention</button>
+          <button class="category-option" data-category="contracts">Contracts & Legal</button>
+          <div class="category-divider"></div>
+          <div class="category-group-label">Creator Niches</div>
+          <button class="category-option niche-option" data-category="niches" data-niche="girl-next-door">→ Girl Next Door</button>
+          <button class="category-option niche-option" data-category="niches" data-niche="domme-findom">→ Domme/Findom</button>
+          <button class="category-option niche-option" data-category="niches" data-niche="trans">→ Trans</button>
+          <button class="category-option niche-option" data-category="niches" data-niche="egirl">→ E-Girl</button>
+          <button class="category-option niche-option" data-category="niches" data-niche="altgirl">→ Alt Girl</button>
+          <button class="category-option niche-option" data-category="niches" data-niche="cosplay">→ Cosplay</button>
         </div>
       </div>
     </div>
@@ -1399,63 +1469,53 @@
       }
 
       function initFilters() {
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const nicheDropdownBtn = document.querySelector('[data-category="niches"]');
-        const nicheDropdownContent = document.querySelector('.niche-dropdown-content');
-        const nicheFilterBtns = document.querySelectorAll('.niche-filter-btn');
+        const dropdown = document.querySelector('.category-dropdown');
+        const dropdownBtn = document.querySelector('.category-dropdown-btn');
+        const selectedCategorySpan = document.getElementById('selectedCategory');
+        const categoryOptions = document.querySelectorAll('.category-option');
 
         // Toggle dropdown
-        if (nicheDropdownBtn) {
-          nicheDropdownBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            nicheDropdownContent.classList.toggle('show');
-          });
-        }
+        dropdownBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          dropdown.classList.toggle('open');
+        });
 
         // Close dropdown when clicking outside
         document.addEventListener('click', function() {
-          if (nicheDropdownContent) {
-            nicheDropdownContent.classList.remove('show');
-          }
+          dropdown.classList.remove('open');
         });
 
-        // Handle main category filters
-        filterBtns.forEach(btn => {
-          btn.addEventListener('click', function() {
+        // Handle category selection
+        categoryOptions.forEach(option => {
+          option.addEventListener('click', function(e) {
+            e.stopPropagation();
+
             const category = this.getAttribute('data-category');
+            const niche = this.getAttribute('data-niche');
+            const labelText = this.textContent.trim();
 
-            if (category === 'niches') {
-              return; // Handled by dropdown
-            }
+            // Update selected category display
+            selectedCategorySpan.textContent = labelText.replace('→ ', '');
 
-            filterBtns.forEach(b => b.classList.remove('active'));
+            // Remove active class from all options
+            categoryOptions.forEach(opt => opt.classList.remove('active'));
             this.classList.add('active');
 
+            // Filter posts
             if (category === 'all') {
               renderBlogPosts(blogPosts);
+            } else if (niche) {
+              // Filter by specific niche
+              const filtered = blogPosts.filter(post => post.niche === niche);
+              renderBlogPosts(filtered);
             } else {
+              // Filter by category
               const filtered = blogPosts.filter(post => post.category === category);
               renderBlogPosts(filtered);
             }
-          });
-        });
-
-        // Handle niche dropdown filters
-        nicheFilterBtns.forEach(btn => {
-          btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            const niche = this.getAttribute('data-niche');
-
-            // Activate the Creator Niches button
-            filterBtns.forEach(b => b.classList.remove('active'));
-            nicheDropdownBtn.classList.add('active');
-
-            // Filter by niche
-            const filtered = blogPosts.filter(post => post.niche === niche);
-            renderBlogPosts(filtered);
 
             // Close dropdown
-            nicheDropdownContent.classList.remove('show');
+            dropdown.classList.remove('open');
           });
         });
       }
