@@ -171,6 +171,12 @@
             margin: 25px 0;
             border-radius: 8px;
         }
+        .highlight-box p {
+            color: rgba(255, 255, 255, 0.95) !important;
+        }
+        .highlight-box strong {
+            color: #00ccaa !important;
+        }
 
         .template-box {
             background: #f7fafc;
@@ -263,7 +269,23 @@
             }
         }
     
-        </style>
+        
+        /* Mobile scroll arrow - always visible like bottom nav */
+        @media (max-width: 768px) {
+            .scroll-to-top {
+                display: flex !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+                bottom: 80px;
+                right: 65px;
+            }
+            .scroll-to-top.visible {
+                display: flex !important;
+                opacity: 1 !important;
+            }
+        }
+        /* mobile-scroll-always-visible */
+    </style>
     <style>
         
 

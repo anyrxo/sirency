@@ -155,6 +155,12 @@
       margin: 2rem 0;
       border-radius: 8px;
     }
+        .highlight-box p {
+            color: rgba(255, 255, 255, 0.95) !important;
+        }
+        .highlight-box strong {
+            color: #00ccaa !important;
+        }
 
     .tweet-example {
       background: rgba(0, 0, 0, 0.4);
@@ -378,6 +384,22 @@
             }
         }
         /* footerlogo-mobile-fix */
+    
+        /* Mobile scroll arrow - always visible like bottom nav */
+        @media (max-width: 768px) {
+            .scroll-to-top {
+                display: flex !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+                bottom: 80px;
+                right: 65px;
+            }
+            .scroll-to-top.visible {
+                display: flex !important;
+                opacity: 1 !important;
+            }
+        }
+        /* mobile-scroll-always-visible */
     </style>
 </head>
 
@@ -937,7 +959,7 @@
 
   
       <div class="related-posts" style="margin-top: 80px; padding-top: 60px; border-top: 2px solid rgba(0, 204, 170, 0.2);">
-        <h2 style="font-size: 2rem; margin-bottom: 40px; background: linear-gradient(135deg, #fff 0%, #00ccaa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Related Articles</h2>
+        <h2 style="font-size: 2rem; margin-bottom: 40px; background: linear-gradient(135deg, #00ccaa 0%, #a855f7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Related Articles</h2>
         <div class="related-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 60px;">
           <a href="onlyfans-reddit-marketing-guide-2025.html" style="display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(0,204,170,0.2); border-radius: 16px; padding: 24px; text-decoration: none; transition: all 0.3s ease;">
             <h3 style="color: #00ccaa; font-size: 1.2rem; margin-bottom: 12px;">Reddit Marketing for OnlyFans</h3>
