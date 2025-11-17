@@ -7,7 +7,7 @@
   'use strict';
 
   // Airtable form URL
-  const AIRTABLE_FORM_URL = 'https://airtable.com/embed/appgyJik1KlBvb7eW/paglH2xDlKkCClyMy/form';
+  const AIRTABLE_FORM_URL = 'https://airtable.com/embed/appQ02O627V58qniG/pagDuERKbidS67V6A/form';
 
   // Create modal HTML
   function createModal() {
@@ -130,5 +130,7 @@
   // Expose global function for manual trigger
   window.openAirtableForm = openModal;
   window.closeAirtableForm = closeModal;
+
+  console.log('✅ Airtable Modal Ready! window.openAirtableForm is available.');
 
 })();

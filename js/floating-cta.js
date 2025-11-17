@@ -109,8 +109,14 @@
     // Open Airtable modal on click
     applyButton.addEventListener('click', function(e) {
       e.preventDefault();
+      console.log('I\'M READY button clicked!');
       if (typeof window.openAirtableForm === 'function') {
+        console.log('Opening Airtable modal...');
         window.openAirtableForm();
+      } else {
+        console.error('window.openAirtableForm is not defined!');
+        // Fallback: open form in new tab
+        window.open('https://airtable.com/appQ02O627V58qniG/pagDuERKbidS67V6A/form', '_blank');
       }
     });
 
