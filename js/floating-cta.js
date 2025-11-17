@@ -104,15 +104,7 @@
 
     if (!floatingContainer) return;
 
-    // Show on mobile only
-    const isMobile = window.innerWidth < 768;
-
-    if (!isMobile) {
-      floatingContainer.style.display = 'none';
-      return;
-    }
-
-    // ALWAYS SHOW ON MOBILE - Always visible, no hiding at top
+    // ALWAYS SHOW - Visible on all screen sizes, always on screen
     floatingContainer.style.display = 'block';
     floatingContainer.style.opacity = '1';
     floatingContainer.style.transform = 'translateX(-50%) translateY(0)';
