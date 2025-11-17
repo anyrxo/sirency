@@ -6,8 +6,8 @@
 (function() {
   'use strict';
 
-  // Airtable form URL - using embed format for iframe compatibility
-  const AIRTABLE_FORM_URL = 'https://airtable.com/embed/appQ02O627V58qniG/pagDuERKbidS67V6A/form?backgroundColor=purple';
+  // Airtable form URL - using shrXXX format for better embedding
+  const AIRTABLE_FORM_URL = 'https://airtable.com/embed/shrmsWwMM4DQ8Zj1r?backgroundColor=purple';
 
   // Create modal HTML
   function createModal() {
@@ -55,7 +55,7 @@
       iframe.addEventListener('error', function() {
         console.error('❌ Failed to load Airtable form');
         if (loadingIndicator) {
-          loadingIndicator.innerHTML = 'Form failed to load. <a href="https://airtable.com/appQ02O627V58qniG/pagDuERKbidS67V6A/form" target="_blank" style="color: #00ccaa; text-decoration: underline;">Open in new tab</a>';
+          loadingIndicator.innerHTML = 'Form failed to load. <a href="https://airtable.com/shrmsWwMM4DQ8Zj1r" target="_blank" style="color: #00ccaa; text-decoration: underline;">Open in new tab</a>';
         }
       });
     }

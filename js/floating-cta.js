@@ -35,17 +35,19 @@
       justify-content: space-between;
     `;
 
-    // Add media query for mobile
+    // Add media query for mobile-only display
     const style = document.createElement('style');
     style.textContent = `
+      /* Hide on desktop, show only on mobile */
       .floating-cta-container {
-        display: flex !important;
-        flex-direction: row !important;
-        align-items: center !important;
-        justify-content: space-between !important;
+        display: none !important;
       }
       @media (max-width: 768px) {
         .floating-cta-container {
+          display: flex !important;
+          flex-direction: row !important;
+          align-items: center !important;
+          justify-content: space-between !important;
           gap: 8px;
           padding: 0 10px;
         }
@@ -116,7 +118,7 @@
       } else {
         console.error('window.openAirtableForm is not defined!');
         // Fallback: open form in new tab
-        window.open('https://airtable.com/appQ02O627V58qniG/pagDuERKbidS67V6A/form', '_blank');
+        window.open('https://airtable.com/shrmsWwMM4DQ8Zj1r', '_blank');
       }
     });
 
