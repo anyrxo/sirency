@@ -28,18 +28,48 @@
       z-index: 1000;
       width: calc(100% - 40px);
       max-width: 700px;
-      display: none;
+      display: flex;
       gap: 12px;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
     `;
+
+    // Add media query for mobile
+    const style = document.createElement('style');
+    style.textContent = `
+      .floating-cta-container {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+      }
+      @media (max-width: 768px) {
+        .floating-cta-container {
+          gap: 8px;
+          padding: 0 10px;
+        }
+        .floating-cta-button {
+          font-size: 14px !important;
+          padding: 16px 24px !important;
+        }
+        .nav-button {
+          width: 50px !important;
+          height: 50px !important;
+        }
+      }
+    `;
+    document.head.appendChild(style);
 
     // Home button (left)
     const homeButton = document.createElement('a');
     homeButton.href = '../index.html';
     homeButton.className = 'nav-button';
-    homeButton.innerHTML = `<span style="font-size: 20px;">🏠</span>`;
+    homeButton.innerHTML = `
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 12L5 10M5 10L12 3L19 10M5 10V20C5 20.5523 5.44772 21 6 21H9M19 10L21 12M19 10V20C19 20.5523 18.5523 21 18 21H15M9 21C9.55228 21 10 20.5523 10 20V16C10 15.4477 10.4477 15 11 15H13C13.5523 15 14 15.4477 14 16V20C14 20.5523 14.4477 21 15 21M9 21H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    `;
     homeButton.style.cssText = `
       display: flex;
       align-items: center;
@@ -55,6 +85,7 @@
       text-decoration: none;
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      flex-shrink: 0;
     `;
 
     homeButton.addEventListener('mouseenter', () => {
@@ -129,7 +160,12 @@
     const blogButton = document.createElement('a');
     blogButton.href = '../blog.html';
     blogButton.className = 'nav-button';
-    blogButton.innerHTML = `<span style="font-size: 20px;">📝</span>`;
+    blogButton.innerHTML = `
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M7 7H17M7 12H17M7 17H13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    `;
     blogButton.style.cssText = `
       display: flex;
       align-items: center;
@@ -145,6 +181,7 @@
       text-decoration: none;
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      flex-shrink: 0;
     `;
 
     blogButton.addEventListener('mouseenter', () => {
