@@ -1,878 +1,660 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-
-  <!-- Homepage -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Pages -->
   <url>
-    <loc>https://www.sirency.com/</loc>
-    <lastmod>2025-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-
-    <!-- Hero Video -->
-    <video:video>
-      <video:thumbnail_loc>https://www.sirency.com/videos/Hero--Video-poster-00001.jpg</video:thumbnail_loc>
-      <video:title>SirenCY - Transform Your OnlyFans Success</video:title>
-      <video:description>See how SirenCY helps creators scale from $0 to $130k/month with proven strategies</video:description>
-      <video:content_loc>https://www.sirency.com/videos/Hero--Video.mp4</video:content_loc>
-      <video:duration>90</video:duration>
-      <video:publication_date>2024-12-01T00:00:00+00:00</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-      <video:live>no</video:live>
-    </video:video>
-
-    <!-- Logo Image -->
-    <image:image>
-      <image:loc>https://www.sirency.com/images/Logo-1-1.svg</image:loc>
-      <image:title>SirenCY - Elite OnlyFans Management Agency Logo</image:title>
-      <image:caption>SirenCY official brand logo</image:caption>
-    </image:image>
-
-    <!-- Member Images -->
-    <image:image>
-      <image:loc>https://www.sirency.com/images/Danii-Tabares-01.png</image:loc>
-      <image:title>Daniela Tabares - SirenCY Success Story</image:title>
-      <image:caption>Successful creator managed by SirenCY</image:caption>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://www.sirency.com/images/Telari.png</image:loc>
-      <image:title>Telari Love - SirenCY Creator</image:title>
-      <image:caption>Elite creator achieving six-figure income with SirenCY</image:caption>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://www.sirency.com/images/Chelsea.jpg</image:loc>
-      <image:title>Chelsea - $0 to $130k/month Success Story</image:title>
-      <image:caption>Chelsea's transformation with SirenCY management</image:caption>
-    </image:image>
-  </url>
-
-  <!-- How We Work Section -->
-  <url>
-    <loc>https://www.sirency.com/#how-we-work</loc>
-    <lastmod>2025-10-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- About Section -->
-  <url>
-    <loc>https://www.sirency.com/#about</loc>
-    <lastmod>2025-10-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Case Studies -->
-  <url>
-    <loc>https://www.sirency.com/#case-study</loc>
-    <lastmod>2025-10-26</lastmod>
+    <loc>https://sirency.com/</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
   </url>
-
-  <!-- Contact Section -->
   <url>
-    <loc>https://www.sirency.com/#contact</loc>
-    <lastmod>2025-10-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Privacy Policy -->
-  <url>
-    <loc>https://www.sirency.com/privacy-policy.html</loc>
-    <lastmod>2025-10-26</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <!-- Terms and Conditions -->
-  <url>
-    <loc>https://www.sirency.com/terms-and-conditions.html</loc>
-    <lastmod>2025-10-26</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <!-- 401 Page -->
-  <url>
-    <loc>https://www.sirency.com/401.html</loc>
-    <lastmod>2025-10-26</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
-
-  <!-- Blog Index -->
-  <url>
-    <loc>https://www.sirency.com/blog/</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://sirency.com/blog.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Blog Post #1 -->
+  <!-- Blog Posts -->
   <url>
-    <loc>https://www.sirency.com/blog/how-to-choose-best-onlyfans-agency-2025.html</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://sirency.com/blog/audit-onlyfans-agency.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #2 -->
   <url>
-    <loc>https://www.sirency.com/blog/audit-onlyfans-agency.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/best-link-in-bio-tools-onlyfans-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #3 -->
   <url>
-    <loc>https://www.sirency.com/blog/best-onlyfans-agencies-comparison-2024.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/best-onlyfans-agencies-comparison-2024.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #4 -->
   <url>
-    <loc>https://www.sirency.com/blog/free-vs-paid-onlyfans-strategy.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/best-photo-editing-apps-onlyfans-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #5 -->
   <url>
-    <loc>https://www.sirency.com/blog/how-to-choose-onlyfans-agency-2026.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/fansly-vs-onlyfans-platform-comparison-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #6 -->
   <url>
-    <loc>https://www.sirency.com/blog/how-to-vet-evaluate-onlyfans-agency-checklist-2026.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/free-vs-paid-onlyfans-strategy.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #7 -->
   <url>
-    <loc>https://www.sirency.com/blog/instagram-marketing-onlyfans-growth-2024.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/how-to-choose-best-onlyfans-agency-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #8 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-agency-alternatives-diy-options-comparison-2026.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/how-to-choose-onlyfans-agency-2026.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #9 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-agency-benefits-pros-cons-analysis-2026.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/how-to-get-first-100-onlyfans-subscribers-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #10 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-agency-commission-how-much-agencies-charge-2026.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/how-to-vet-evaluate-onlyfans-agency-checklist-2026.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #11 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-agency-commission-rates.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/instagram-marketing-onlyfans-growth-2024.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #12 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-agency-contract-what-to-look-for-legal-guide-2026.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/instagram-reels-onlyfans-conversion-strategy-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #13 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-agency-cost-pricing-guide-2024.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-affiliate-marketing-referral-program-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #14 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-agency-for-beginners-new-creators-guide-2026.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-agency-alternatives-diy-options-comparison-2026.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #15 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-agency-scam-red-flags.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-agency-benefits-pros-cons-analysis-2026.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #16 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-agency-scams-red-flags-how-to-avoid-2026.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-agency-commission-how-much-agencies-charge-2026.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #17 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-agency-success-stories-real-results-2026.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-agency-commission-rates.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #18 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-agency-vs-solo-which-makes-more-money.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-agency-contract-what-to-look-for-legal-guide-2026.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #19 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-analytics-metrics-tracking-guide.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-agency-cost-pricing-guide-2024.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #20 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-chatting-scripts-conversation-templates.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-agency-for-beginners-new-creators-guide-2026.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #21 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-content-batching-workflow-optimization.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-agency-scam-red-flags.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #22 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-content-calendar-planning-system.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-agency-scams-red-flags-how-to-avoid-2026.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #23 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-content-quality-production-guide.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-agency-success-stories-real-results-2026.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #24 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-content-strategy-30-30-30-10-rule.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-agency-vs-solo-which-makes-more-money.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #25 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-dm-chatting-revenue-strategies.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-altgirl-niche-complete-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #26 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-growth-strategies-without-agency-diy-2026.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-analytics-metrics-tracking-guide.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #27 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-monetization-strategies-maximize-income-2026.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-analytics-performance-tracking-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #28 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-niche-selection-most-profitable-niches-2026.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-analytics-performance-tracking-metrics-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #29 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-platform-features-optimization-guide.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-audience-growth-psychology-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #30 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-ppv-strategy-pricing-psychology.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-bio-optimization-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #31 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-pricing-optimization-strategy.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-branding-personal-brand-building-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #32 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-promotion-strategies-all-platforms-2026.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-branding-personal-brand-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #33 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-subscriber-engagement-psychology.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-bundles-package-deals-strategy-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #34 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-subscriber-retention-reduce-churn-2026.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-business-scaling-team-building-hiring-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #35 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-subscriber-retention-strategies.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-chatting-scripts-conversation-templates.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #36 -->
   <url>
-    <loc>https://www.sirency.com/blog/personal-branding-onlyfans-creators-2024.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-chatting-service-automation-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #37 -->
   <url>
-    <loc>https://www.sirency.com/blog/psychology-free-trial-links.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-collaboration-creator-partnerships-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #38 -->
   <url>
-    <loc>https://www.sirency.com/blog/reddit-marketing-onlyfans-complete-guide.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-content-batching-workflow-optimization.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #39 -->
   <url>
-    <loc>https://www.sirency.com/blog/reddit-marketing-onlyfans-growth-2024.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-content-calendar-planning-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #40 -->
   <url>
-    <loc>https://www.sirency.com/blog/rize-onlyfans-agency-review-vs-alternatives.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-content-calendar-planning-system.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #41 -->
   <url>
-    <loc>https://www.sirency.com/blog/signing-onlyfans-agency-checklist.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-content-ideas-that-sell-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #42 -->
   <url>
-    <loc>https://www.sirency.com/blog/tiktok-onlyfans-funnel-strategy-2024.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-content-monetization-multiple-revenue-streams-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #43 -->
   <url>
-    <loc>https://www.sirency.com/blog/twitter-x-marketing-onlyfans-growth.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-content-quality-production-guide.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #44 -->
   <url>
-    <loc>https://www.sirency.com/blog/ultimate-guide-free-trial-links-ftl.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-content-strategy-30-30-30-10-rule.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #45 -->
   <url>
-    <loc>https://www.sirency.com/blog/what-does-onlyfans-agency-do-complete-services-guide.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-content-strategy-planning-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #46 -->
   <url>
-    <loc>https://www.sirency.com/blog/when-to-hire-onlyfans-agency-timing-guide-2026.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-cosplay-niche-complete-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #47 -->
   <url>
-    <loc>https://www.sirency.com/blog/why-models-stuck-3k-month.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-creator-mental-health-wellness-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Post #48 -->
   <url>
-    <loc>https://www.sirency.com/blog/why-onlyfans-models-need-agency.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-crisis-management-reputation-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #48 -->
   <url>
-    <loc>https://www.sirency.com/blog/instagram-reels-onlyfans-conversion-strategy-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-custom-content-requests-strategy-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #49 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-content-ideas-that-sell-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-discord-marketing-community-building-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #50 -->
   <url>
-    <loc>https://www.sirency.com/blog/how-to-get-first-100-onlyfans-subscribers-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-dm-chatting-revenue-strategies.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #51 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-bio-optimization-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-dm-messaging-strategy-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #52 -->
   <url>
-    <loc>https://www.sirency.com/blog/best-link-in-bio-tools-onlyfans-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-domme-findom-niche-complete-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #53 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-equipment-photography-setup-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-egirl-niche-complete-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #54 -->
   <url>
-    <loc>https://www.sirency.com/blog/best-photo-editing-apps-onlyfans-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-email-marketing-strategy-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #55 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-pricing-strategy-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-equipment-photography-setup-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #56 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-analytics-performance-tracking-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-fan-engagement-retention-strategy-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #57 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-dm-messaging-strategy-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-future-trends-2026-predictions.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #58 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-content-calendar-planning-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-girl-next-door-niche-complete-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #59 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-subscriber-retention-loyalty-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-growth-strategies-without-agency-diy-2026.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #60 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-promotion-marketing-strategies-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-instagram-marketing-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #61 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-tax-deductions-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-international-creator-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #62 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-safety-security-privacy-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-legal-compliance-regulations-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #63 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-video-content-filming-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-livestreaming-strategy-live-content-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #64 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-branding-personal-brand-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-llc-legal-business-setup-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #65 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-reddit-marketing-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-management-agency-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #66 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-tiktok-marketing-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-monetization-strategies-maximize-income-2026.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #67 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-instagram-marketing-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-niche-selection-most-profitable-niches-2026.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #68 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-twitter-x-marketing-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-niche-selection-profitable-niches-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #69 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-email-marketing-strategy-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-platform-features-optimization-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #70 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-snapchat-premium-marketing-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-platform-features-optimization-guide.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #71 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-youtube-marketing-strategy-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-ppv-pay-per-view-strategy-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #72 -->
   <url>
-    <loc>https://www.sirency.com/blog/fansly-vs-onlyfans-platform-comparison-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-ppv-strategy-pricing-psychology.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #73 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-chatting-service-automation-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-pricing-optimization-strategy.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #74 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-management-agency-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-pricing-strategy-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #75 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-llc-legal-business-setup-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-promotion-marketing-strategies-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #76 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-telegram-marketing-private-channels-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-promotion-strategies-all-platforms-2026.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #77 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-discord-marketing-community-building-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-reddit-marketing-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #78 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-livestreaming-strategy-live-content-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-safety-security-privacy-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #79 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-ppv-pay-per-view-strategy-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-seo-discoverability-optimization-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #80 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-custom-content-requests-strategy-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-snapchat-premium-marketing-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #81 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-affiliate-marketing-referral-program-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-subscriber-demographics-targeting-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #82 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-fan-engagement-retention-strategy-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-subscriber-engagement-psychology.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #83 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-niche-selection-profitable-niches-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-subscriber-retention-loyalty-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #84 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-collaboration-creator-partnerships-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-subscriber-retention-reduce-churn-2026.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #85 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-bundles-package-deals-strategy-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-subscriber-retention-strategies.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #86 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-seo-discoverability-optimization-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-tax-deductions-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #87 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-branding-personal-brand-building-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-taxes-deductions-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #88 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-analytics-performance-tracking-metrics-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-telegram-marketing-private-channels-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #89 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-content-strategy-planning-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-tiktok-marketing-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #90 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-taxes-deductions-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-trans-niche-complete-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #91 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-audience-growth-psychology-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-twitter-x-marketing-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #92 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-subscriber-demographics-targeting-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-video-content-filming-guide-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #93 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-content-monetization-multiple-revenue-streams-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/onlyfans-youtube-marketing-strategy-2025.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #94 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-platform-features-optimization-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/personal-branding-onlyfans-creators-2024.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #95 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-business-scaling-team-building-hiring-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/psychology-free-trial-links.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #96 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-creator-mental-health-wellness-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/reddit-marketing-onlyfans-complete-guide.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #97 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-legal-compliance-regulations-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/reddit-marketing-onlyfans-growth-2024.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #98 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-international-creator-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/rize-onlyfans-agency-review-vs-alternatives.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #99 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-crisis-management-reputation-guide-2025.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/signing-onlyfans-agency-checklist.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Post #100 -->
   <url>
-    <loc>https://www.sirency.com/blog/onlyfans-future-trends-2026-predictions.html</loc>
-    <lastmod>2025-01-16</lastmod>
+    <loc>https://sirency.com/blog/tiktok-onlyfans-funnel-strategy-2024.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://sirency.com/blog/twitter-x-marketing-onlyfans-growth.html</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sirency.com/blog/ultimate-guide-free-trial-links-ftl.html</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sirency.com/blog/what-does-onlyfans-agency-do-complete-services-guide.html</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sirency.com/blog/when-to-hire-onlyfans-agency-timing-guide-2026.html</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sirency.com/blog/why-models-stuck-3k-month.html</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sirency.com/blog/why-onlyfans-models-need-agency.html</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
