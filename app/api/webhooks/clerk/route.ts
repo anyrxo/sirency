@@ -2,12 +2,20 @@ import { Webhook } from 'svix'
 import { headers } from 'next/headers'
 import { WebhookEvent } from '@clerk/nextjs/server'
 import { createClient } from '@supabase/supabase-js'
+import { NextResponse } from 'next/server'
+
+// Force dynamic to ensure webhook isn't statically cached
+export const dynamic = 'force-dynamic'
 
 export async function POST(req: Request) {
+  console.log('Received Clerk Webhook')
   const WEBHOOK_SECRET = process.env.CLERK_WEBHOOK_SECRET
 
   if (!WEBHOOK_SECRET) {
-    throw new Error('Please add CLERK_WEBHOOK_SECRET from Clerk Dashboard to .env or .env.local')
+    console.error('Missing CLERK_WEBHOOK_SECRET')
+    return new Response('Please add CLERK_WEBHOOK_SECRET from Clerk Dashboard to .env or .env.local', {
+      status: 500,
+    })
   }
 
   // Get the headers
@@ -18,6 +26,7 @@ export async function POST(req: Request) {
 
   // If there are no headers, error out
   if (!svix_id || !svix_timestamp || !svix_signature) {
+    console.error('Missing svix headers')
     return new Response('Error occured -- no svix headers', {
       status: 400,
     })
@@ -49,10 +58,17 @@ export async function POST(req: Request) {
   // Get the ID and type
   const { id } = evt.data
   const eventType = evt.type
+  console.log(`Processing ${eventType} for ${id}`)
 
   // Initialize Supabase
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
   const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY!
+  
+  if (!supabaseUrl || !supabaseKey) {
+    console.error('Missing Supabase Env Vars')
+    return new Response('Server Config Error', { status: 500 })
+  }
+
   const supabase = createClient(supabaseUrl, supabaseKey)
 
   if (eventType === 'user.created' || eventType === 'user.updated') {
@@ -79,6 +95,7 @@ export async function POST(req: Request) {
       console.error('Error upserting profile:', error)
       return new Response('Database Error', { status: 500 })
     }
+    console.log('Successfully synced to Supabase')
   } else if (eventType === 'user.deleted') {
     const { id } = evt.data
     
@@ -93,6 +110,5 @@ export async function POST(req: Request) {
     }
   }
 
-  return new Response('', { status: 200 })
+  return NextResponse.json({ success: true })
 }
-
