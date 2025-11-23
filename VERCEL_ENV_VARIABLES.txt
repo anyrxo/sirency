@@ -14,7 +14,5 @@ POSTGRES_HOST=db.herjyhkvtgmoazimibaa.supabase.co
 POSTGRES_PASSWORD=Onfroy1738!
 POSTGRES_DATABASE=postgres
 
-# Webhook Secret - COPY THIS FROM CLERK DASHBOARD AFTER CREATING THE WEBHOOK ENDPOINT
-# URL will be: https://sirency.com/api/webhooks/clerk
-CLERK_WEBHOOK_SECRET=
-
+# Webhook Secret - FROM CLERK DASHBOARD
+CLERK_WEBHOOK_SECRET=whsec_Qzg2JG2zI3Xgh0iAu9rrJmik6PU9d4oV

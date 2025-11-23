@@ -2,10 +2,7 @@
 // This script initializes Clerk for authentication and Supabase for database interactions
 
 // Configuration constants
-// UPDATED: Using the exact publishable key provided by the user
 const CLERK_PUBLISHABLE_KEY = 'pk_test_d2VsbC1tb2NjYXNpbi0yNi5jbGVyay5hY2NvdW50cy5kZXYk';
-
-// Supabase Configuration
 const SUPABASE_URL = 'https://herjyhkvtgmoazimibaa.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhlcmp5aGt2dGdtb2F6aW1pYmFhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM4ODI3MjIsImV4cCI6MjA3OTQ1ODcyMn0.KgswQpv2RPI550sfinw7vTCze9ijgsWTeb7NwUvBpMg';
 
@@ -168,28 +165,23 @@ const AUTH_STYLES = `
 }
 
 .nav-login-btn {
-    background: rgba(0, 204, 170, 0.1);
-    border: 1px solid rgba(0, 204, 170, 0.3);
-    color: #0ca;
+    background: transparent;
+    color: white;
     padding: 8px 20px;
-    border-radius: 50px;
+    border-radius: 4px;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.9rem;
     transition: all 0.3s ease;
-    backdrop-filter: blur(5px);
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .nav-login-btn:hover {
-    background: rgba(0, 204, 170, 0.2);
-    box-shadow: 0 0 15px rgba(0, 204, 170, 0.3);
-    transform: translateY(-1px);
-    color: white;
-    border-color: #0ca;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: white;
 }
 `;
 
@@ -389,44 +381,28 @@ function handleAuthUI(Clerk) {
     }
 
     // Standard Navbar Integration
-    const navbar = document.querySelector('.navbar-wrapper') || document.body;
+    // Target the container we added in the HTML directly
+    const authWidget = document.getElementById('clerk-floating-widget');
     
-    let authWidget = document.getElementById('clerk-floating-widget');
-    if (!authWidget) {
-        authWidget = document.createElement('div');
-        authWidget.id = 'clerk-floating-widget';
-        
-        if (document.querySelector('.navbar-wrapper')) {
-            document.querySelector('.navbar-wrapper').appendChild(authWidget);
-            authWidget.style.position = 'absolute';
-            authWidget.style.right = '20px'; // Adjusted for mobile menu button
-            authWidget.style.top = '50%';
-            authWidget.style.transform = 'translateY(-50%)';
-            
-            // Hide on very small screens or adjust position via media queries if needed
-            // Currently relies on the script being smart about placement
+    if (authWidget) {
+        if (Clerk.user) {
+            const userButton = document.createElement('div');
+            authWidget.innerHTML = '';
+            authWidget.appendChild(userButton);
+            Clerk.mountUserButton(userButton);
         } else {
-            authWidget.style.position = 'fixed';
-            authWidget.style.top = '20px';
-            authWidget.style.right = '20px';
-            authWidget.style.zIndex = '9999';
-            document.body.appendChild(authWidget);
+            const signInButton = document.createElement('button');
+            signInButton.innerHTML = 'LOGIN';
+            signInButton.className = 'nav-login-btn';
+            
+            signInButton.onclick = () => window.showRoleModal();
+            
+            authWidget.innerHTML = '';
+            authWidget.appendChild(signInButton);
         }
-    }
-
-    if (Clerk.user) {
-        const userButton = document.createElement('div');
-        authWidget.innerHTML = '';
-        authWidget.appendChild(userButton);
-        Clerk.mountUserButton(userButton);
     } else {
-        const signInButton = document.createElement('button');
-        signInButton.innerHTML = '<span>🔒</span> Login';
-        signInButton.className = 'nav-login-btn';
-        
-        signInButton.onclick = () => window.showRoleModal();
-        
-        authWidget.innerHTML = '';
-        authWidget.appendChild(signInButton);
+        // Fallback if widget container not found in HTML (legacy or other pages)
+        const navbar = document.querySelector('.navbar-wrapper') || document.body;
+        // ... (rest of dynamic creation logic if needed, but prefer explicit placement)
     }
 }
