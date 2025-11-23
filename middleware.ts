@@ -11,9 +11,9 @@ const isPublicRoute = createRouteMatcher([
   '/401.html'
 ]);
 
-export default clerkMiddleware((auth, request) => {
+export default clerkMiddleware(async (auth, request) => {
   if (!isPublicRoute(request)) {
-    auth().protect();
+    await auth.protect();
   }
 });
 
@@ -25,4 +25,3 @@ export const config = {
     '/(api|trpc)(.*)',
   ],
 };
-

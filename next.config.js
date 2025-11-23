@@ -3,9 +3,7 @@ const nextConfig = {
     typescript: {
         ignoreBuildErrors: true,
     },
-    eslint: {
-        ignoreDuringBuilds: true,
-    },
+    // Removed 'eslint' key to fix warning
     // Ensure headers are allowed for webhooks
     async headers() {
         return [
