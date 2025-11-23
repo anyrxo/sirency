@@ -1,0 +1,592 @@
+/* ===================================
+   PREMIUM LIQUID GLASS & MICRO-INTERACTIONS
+   Based on 1abel Website4 Implementation
+   SirenCY Enhancement v2.0
+   =================================== */
+
+/* ===================================
+   GLASSMORPHISM EFFECTS
+   =================================== */
+
+/* Premium Glass Cards with Depth */
+.glass-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+  backdrop-filter: blur(30px) saturate(180%);
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  border-radius: 24px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-dark {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  backdrop-filter: blur(30px) saturate(180%);
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Ultra Premium Navbar Glass */
+.navbar-glass {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  ) !important;
+  backdrop-filter: blur(40px) saturate(200%);
+  -webkit-backdrop-filter: blur(40px) saturate(200%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Frosted Glass Input Fields */
+.glass-input {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 12px 16px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+}
+
+.glass-input:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(0, 204, 170, 0.5);
+  box-shadow: 0 8px 32px rgba(0, 204, 170, 0.2);
+  outline: none;
+}
+
+/* ===================================
+   HOVER & ELEVATION EFFECTS
+   =================================== */
+
+/* Hover Elevate with Shadow Expansion */
+.hover-elevate {
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.hover-elevate:hover {
+  transform: translateY(-8px) translateZ(0) scale(1.02);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.15),
+    0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hover-elevate:active {
+  transform: translateY(-2px) translateZ(0) scale(0.98);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.1),
+    0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* ===================================
+   SHIMMER & SHINE EFFECTS
+   =================================== */
+
+/* Gradient Shimmer on Hover */
+.shimmer-on-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-on-hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 100%
+  );
+  transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.shimmer-on-hover:hover::before {
+  left: 100%;
+}
+
+/* Continuous Shimmer Animation */
+@keyframes shimmerContinuous {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.shimmer-continuous::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    transparent 100%
+  );
+  animation: shimmerContinuous 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* ===================================
+   MAGNETIC & RIPPLE EFFECTS
+   =================================== */
+
+/* Magnetic Button Effect */
+.magnetic-button {
+  position: relative;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.magnetic-button:hover {
+  transform: scale(1.05) translateZ(0);
+}
+
+.magnetic-button:active {
+  transform: scale(0.95) translateZ(0);
+}
+
+/* Ripple Effect on Click */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+  pointer-events: none;
+}
+
+.ripple:active::after {
+  width: 400px;
+  height: 400px;
+}
+
+/* ===================================
+   PREMIUM ANIMATIONS
+   =================================== */
+
+/* Spring In Animation */
+@keyframes springIn {
+  0% {
+    transform: scale(0.8) translateY(30px);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05) translateY(-8px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.spring-in {
+  animation: springIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Slide In Up */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in-up {
+  animation: slideInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Float Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Pulse Glow for Important CTAs */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(0, 204, 170, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(0, 204, 170, 0.4);
+  }
+}
+
+.pulse-glow {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+/* ===================================
+   GLOW & LIGHT EFFECTS
+   =================================== */
+
+/* Glow on Hover */
+.glow-on-hover {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.glow-on-hover::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 204, 170, 0),
+    rgba(0, 204, 170, 0.3),
+    rgba(0, 204, 170, 0)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+  filter: blur(12px);
+}
+
+.glow-on-hover:hover::before {
+  opacity: 1;
+}
+
+/* ===================================
+   SMOOTH TRANSITIONS
+   =================================== */
+
+.smooth-color {
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.smooth-bg {
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.smooth-all {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===================================
+   PREMIUM BUTTON STYLES
+   =================================== */
+
+.btn-liquid {
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-liquid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.btn-liquid:hover::before {
+  left: 100%;
+}
+
+/* ===================================
+   FLOATING ELEMENTS
+   =================================== */
+
+/* Floating Bottom CTA Button (Mobile) */
+.floating-cta {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.3);
+  animation: floatIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* ===================================
+   IMAGE ENHANCEMENTS
+   =================================== */
+
+/* Premium Image Container */
+.premium-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.premium-image img {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.premium-image:hover img {
+  transform: scale(1.1) rotate(1deg);
+}
+
+/* Aspect Ratio Containers */
+.aspect-3-4 {
+  aspect-ratio: 3 / 4;
+  width: 100%;
+  object-fit: cover;
+}
+
+.aspect-16-9 {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  object-fit: cover;
+}
+
+.aspect-1-1 {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ===================================
+   GRADIENT BORDERS
+   =================================== */
+
+.gradient-border {
+  position: relative;
+  background: linear-gradient(var(--bg-color), var(--bg-color)) padding-box,
+              linear-gradient(135deg, rgba(0, 204, 170, 0.5), rgba(0, 156, 130, 0.5)) border-box;
+  border: 2px solid transparent;
+  border-radius: 24px;
+}
+
+/* ===================================
+   PREMIUM TOOLTIPS
+   =================================== */
+
+.premium-tooltip {
+  position: relative;
+}
+
+.premium-tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  padding: 8px 16px;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.premium-tooltip:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-12px);
+}
+
+/* ===================================
+   MOBILE OPTIMIZATIONS
+   =================================== */
+
+@media (max-width: 768px) {
+  /* Reduce elevation on mobile for performance */
+  .hover-elevate:hover {
+    transform: translateY(-4px) translateZ(0);
+  }
+
+  /* Simplify blur for performance */
+  .glass-card,
+  .glass-card-dark {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  /* Touch-friendly button sizes */
+  .magnetic-button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Floating CTA positioning */
+  .floating-cta {
+    bottom: 80px;
+    left: 20px;
+    right: 20px;
+    width: calc(100% - 40px);
+    transform: none;
+  }
+}
+
+/* ===================================
+   ROUNDED CORNERS (Premium Style)
+   =================================== */
+
+.rounded-premium {
+  border-radius: 16px;
+}
+
+.rounded-premium-xl {
+  border-radius: 24px;
+}
+
+.rounded-premium-2xl {
+  border-radius: 32px;
+}
+
+.rounded-premium-full {
+  border-radius: 9999px;
+}
+
+/* ===================================
+   PERFORMANCE OPTIMIZATIONS
+   =================================== */
+
+/* Force GPU acceleration */
+.gpu-accelerated {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Optimize animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ===================================
+   PREMIUM SCROLLBAR
+   =================================== */
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, rgba(0, 204, 170, 0.6), rgba(0, 156, 130, 0.6));
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, rgba(0, 204, 170, 0.9), rgba(0, 156, 130, 0.9));
+}
+
+/* ===================================
+   SELECTION STYLING
+   =================================== */
+
+::selection {
+  background: rgba(0, 204, 170, 0.3);
+  color: white;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: rgba(0, 204, 170, 0.3);
+  color: white;
+  text-shadow: none;
+}
+
+/* ===================================
+   FOCUS STATES (Accessibility)
+   =================================== */
+
+*:focus-visible {
+  outline: 3px solid rgba(0, 204, 170, 0.8);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline-offset: 6px;
+}

@@ -1,0 +1,1292 @@
+/* ===================================
+   CLEAN GLASS EFFECTS & FIXES
+   SirenCY v2.1 - Cleaner, Subtle Premium
+   =================================== */
+
+/* ===================================
+   REMOVE ALL BROWN BACKGROUNDS
+   =================================== */
+
+/* Replace brown (#efe7dc) with black throughout site */
+[style*="background-color: #efe7dc"],
+[style*="background-color:#efe7dc"],
+.powersection,
+.memberaccess,
+.member-access-2,
+.location,
+.casestudies,
+.trip-around,
+.before-after,
+.subfee {
+  background-color: #000000 !important;
+  background-image: linear-gradient(135deg, #000000 0%, #0a0a0a 100%) !important;
+}
+
+/* ===================================
+   FIX BUTTON CENTERING
+   =================================== */
+
+/* Center "Apply Now" buttons properly */
+.button-primary {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Center button containers */
+.info-inner,
+.div-block.center,
+.div-block.access-2div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ===================================
+   CLEANER GLASS EFFECTS
+   =================================== */
+
+/* Subtle Soft Glass - No harsh blur */
+.glass-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.04) 100%
+  ) !important;
+  backdrop-filter: blur(12px) brightness(1.1);
+  -webkit-backdrop-filter: blur(12px) brightness(1.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-dark {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  ) !important;
+  backdrop-filter: blur(12px) brightness(0.9);
+  -webkit-backdrop-filter: blur(12px) brightness(0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Clean Navbar Glass */
+.navbar-logo-left-container.shadow-three,
+.navbar-glass {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  ) !important;
+  backdrop-filter: blur(16px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===================================
+   CLEANER MEMBER CARDS
+   =================================== */
+
+.member {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  ) !important;
+  backdrop-filter: blur(10px) brightness(1.05);
+  -webkit-backdrop-filter: blur(10px) brightness(1.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.member:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  ) !important;
+  border-color: rgba(0, 204, 170, 0.3);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(0, 204, 170, 0.2);
+}
+
+/* ===================================
+   CLEANER CASE STUDY CARDS
+   =================================== */
+
+.feetext,
+.div-block-3,
+.div-block-5 {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  ) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feetext:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.04) 100%
+  ) !important;
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* ===================================
+   CLEANER BUTTONS
+   =================================== */
+
+.button-primary {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 204, 170, 0.95) 0%,
+    rgba(0, 156, 130, 0.95) 100%
+  ) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow:
+    0 4px 16px rgba(0, 204, 170, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.button-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.button-primary:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 204, 170, 1) 0%,
+    rgba(0, 156, 130, 1) 100%
+  ) !important;
+  box-shadow:
+    0 6px 24px rgba(0, 204, 170, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.button-primary:hover::before {
+  left: 100%;
+}
+
+.button-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 12px rgba(0, 204, 170, 0.3);
+}
+
+/* ===================================
+   CLEANER IMAGE EFFECTS
+   =================================== */
+
+.gallery-image,
+.instaimage,
+.member-image img {
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.gallery-image:hover,
+.instaimage:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* ===================================
+   FLOATING CTA - CLEANER VERSION
+   =================================== */
+
+.floating-cta-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: calc(100% - 40px);
+  max-width: 400px;
+}
+
+.floating-cta-button {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 204, 170, 0.98) 0%,
+    rgba(0, 156, 130, 0.98) 100%
+  ) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 8px 32px rgba(0, 204, 170, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* ===================================
+   REMOVE UGLY EFFECTS
+   =================================== */
+
+/* Tone down overly aggressive glass */
+.glass-input {
+  background: rgba(255, 255, 255, 0.06) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.glass-input:focus {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(0, 204, 170, 0.4) !important;
+  box-shadow: 0 4px 16px rgba(0, 204, 170, 0.15) !important;
+}
+
+/* Remove excessive blur from premium-liquid-glass.css */
+.navbar-glass {
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+}
+
+/* ===================================
+   SUBTLE HOVER EFFECTS
+   =================================== */
+
+.hover-elevate {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-elevate:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.hover-elevate:active {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ===================================
+   CLEANER SHIMMER
+   =================================== */
+
+.shimmer-on-hover::before {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.15) 50%,
+    transparent 100%
+  ) !important;
+}
+
+/* ===================================
+   MOBILE RESPONSIVENESS
+   =================================== */
+
+@media (max-width: 768px) {
+  /* Reduce blur on mobile for performance */
+  .glass-card,
+  .glass-card-dark,
+  .member,
+  .feetext {
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+  }
+
+  .navbar-glass,
+  .navbar-logo-left-container.shadow-three {
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+  }
+
+  /* Better button sizing on mobile */
+  .button-primary {
+    width: 100%;
+    max-width: 320px;
+    padding: 16px 32px !important;
+    font-size: 14px !important;
+  }
+
+  /* Floating CTA positioning */
+  .floating-cta-container {
+    bottom: 80px;
+    width: calc(100% - 32px);
+    left: 16px;
+    right: 16px;
+    transform: none;
+    max-width: none;
+  }
+}
+
+/* ===================================
+   FIX SPECIFIC ISSUES
+   =================================== */
+
+/* Ensure hero background video is visible */
+.herosection {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.herosection .background-video,
+.herosection .w-background-video {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 0 !important;
+  object-fit: cover !important;
+}
+
+.herosection .background-video video,
+.herosection .w-background-video video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.herosection .container,
+.herosection .hero-info {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Fix hero section button centering */
+.herosection .button-primary,
+.memberaccess .button-primary,
+.casestudies .button-primary,
+.location .button-primary {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+/* Center container fixes */
+.container,
+.container-2,
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Info inner should center everything */
+.info-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* ===================================
+   REMOVE HARSH CONTRASTS
+   =================================== */
+
+/* Soften borders */
+* {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Softer shadows everywhere */
+.shadow-three,
+.shadow-2xl {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* ===================================
+   FIX PADDING ISSUES EVERYWHERE
+   =================================== */
+
+/* Fix overly aggressive padding */
+.section-container,
+.container,
+.powercontainer,
+.workwrapper,
+.locationwrap,
+.subfeewrapper {
+  padding: 60px 20px !important;
+}
+
+@media (max-width: 768px) {
+  .section-container,
+  .container,
+  .powercontainer,
+  .workwrapper,
+  .locationwrap,
+  .subfeewrapper {
+    padding: 40px 16px !important;
+  }
+}
+
+/* Fix member cards padding */
+.member {
+  padding: 0 !important;
+}
+
+.member-info {
+  padding: 20px !important;
+}
+
+/* Fix case study cards padding */
+.feetext {
+  padding: 32px !important;
+}
+
+.div-block-3,
+.div-block-5 {
+  padding: 24px !important;
+}
+
+@media (max-width: 768px) {
+  .feetext {
+    padding: 20px !important;
+  }
+
+  .div-block-3,
+  .div-block-5 {
+    padding: 16px !important;
+  }
+}
+
+/* Fix gallery spacing */
+.column-wrapper {
+  gap: 20px !important;
+  padding: 0 !important;
+}
+
+.image-column {
+  padding: 12px !important;
+}
+
+/* Fix button padding */
+.button-primary {
+  padding: 14px 40px !important;
+}
+
+@media (max-width: 768px) {
+  .button-primary {
+    padding: 12px 32px !important;
+  }
+}
+
+/* ===================================
+   MAKE IMAGES CLICKABLE & EXPANDABLE
+   =================================== */
+
+/* Results section gallery images */
+.gallery-image,
+.instaimage,
+.member-image img {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-image:hover,
+.instaimage:hover,
+.member-image img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+/* Image expansion modal */
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 10000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-modal.active {
+  display: flex;
+  opacity: 1;
+}
+
+.image-modal img {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.6);
+  animation: modalZoom 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes modalZoom {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.image-modal-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.image-modal-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(90deg);
+}
+
+/* ===================================
+   FIX HORRIBLE HOW WE WORK SECTION
+   =================================== */
+
+/* Fix the ugly brown background */
+.howwework {
+  background-color: #0f0f0f !important;
+  background-image: linear-gradient(135deg, #000000 0%, #1a1a1a 100%) !important;
+  padding: 60px 20px 60px 20px !important;
+}
+
+.workwrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.text-wrapper {
+  text-align: center;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.text-wrapper .heading-80.v4 {
+  font-size: 48px !important;
+  line-height: 1.2 !important;
+  max-width: 800px;
+  margin: 0 auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Fix the content blocks */
+.div-block-11 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  width: 100%;
+}
+
+.div-block-10 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px 28px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.div-block-10:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.04) 100%
+  );
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.div-block-10 .heading-86 {
+  font-size: 24px !important;
+  line-height: 1.3 !important;
+  margin: 0;
+  font-weight: 700;
+}
+
+.div-block-10 .pricetext.v4 {
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Mobile responsive */
+@media (max-width: 991px) {
+  .div-block-11 {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .workwrapper {
+    gap: 32px;
+  }
+
+  .text-wrapper .heading-80.v4 {
+    font-size: 36px !important;
+  }
+
+  .div-block-10 {
+    padding: 28px 24px;
+    gap: 14px;
+  }
+
+  .div-block-10 .heading-86 {
+    font-size: 20px !important;
+  }
+
+  .div-block-10 .pricetext.v4 {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 479px) {
+  .howwework {
+    padding: 50px 16px !important;
+  }
+
+  .workwrapper {
+    gap: 24px;
+  }
+
+  .text-wrapper .heading-80.v4 {
+    font-size: 28px !important;
+  }
+
+  .div-block-11 {
+    gap: 20px;
+  }
+
+  .div-block-10 {
+    padding: 24px 20px;
+    gap: 12px;
+  }
+
+  .div-block-10 .heading-86 {
+    font-size: 18px !important;
+  }
+
+  .div-block-10 .pricetext.v4 {
+    font-size: 14px !important;
+  }
+}
+
+/* ===================================
+   FIX HORIZONTAL SCROLL & TEXT OVERFLOW
+   =================================== */
+
+/* Prevent horizontal scroll */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  position: relative;
+}
+
+body {
+  width: 100% !important;
+}
+
+/* Fix all containers to prevent overflow */
+* {
+  box-sizing: border-box !important;
+}
+
+.page-wrapper,
+.w-container,
+.container,
+.section-container,
+.workwrapper,
+.powercontainer,
+.locationwrap,
+.subfeewrapper,
+.insta-wrapper,
+.member-wrapper,
+.column-wrapper {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+/* Fix text overflow */
+h1, h2, h3, h4, h5, h6, p, div, span {
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+  hyphens: auto !important;
+}
+
+/* Prevent images from causing overflow */
+img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Fix case study numbers that overflow */
+.priceheading2,
+.heading-87,
+.heading-88,
+.heading-81,
+.heading-82,
+.heading-84,
+.heading-86 {
+  max-width: 100% !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto !important;
+}
+
+/* Fix large numbers like $673,811.20 */
+.priceheading2 {
+  font-size: clamp(32px, 6vw, 56px) !important;
+  line-height: 1.2 !important;
+}
+
+/* Fix infotext2 containers */
+.infotext2 {
+  max-width: 100% !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  margin-bottom: 24px !important;
+  padding: 12px 0 !important;
+}
+
+.infotext2:last-child {
+  margin-bottom: 0 !important;
+}
+
+.infotext2 .priceheading2 {
+  font-size: clamp(24px, 5vw, 42px) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.1 !important;
+}
+
+.infotext2 .pricetext {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 14px !important;
+  opacity: 0.7 !important;
+  line-height: 1.4 !important;
+}
+
+/* Fix div-block-5 stats section */
+.div-block-5 {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 32px !important;
+  padding: 32px 24px !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Fix case study cards */
+.feewrap {
+  max-width: 100% !important;
+  overflow: hidden !important;
+  display: grid !important;
+  gap: 24px !important;
+  margin-bottom: 40px !important;
+}
+
+.feewrap.freewap-trial {
+  grid-template-columns: 1fr !important;
+  grid-template-rows: auto !important;
+}
+
+.feetext {
+  max-width: 100% !important;
+  overflow: hidden !important;
+  padding: 32px 24px !important;
+  grid-row: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 24px !important;
+}
+
+.div-block-3 {
+  grid-row: 2 !important;
+  padding: 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
+
+.div-block-3 img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+/* Ensure proper stacking on mobile */
+@media (min-width: 768px) {
+  .feewrap.freewap-trial {
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: auto auto !important;
+  }
+
+  .feetext {
+    grid-column: 1 / -1 !important;
+    grid-row: 1 !important;
+  }
+
+  .div-block-3 {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+  }
+
+  .div-block-5 {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+  }
+}
+
+/* Fix member access section */
+.memberaccess {
+  max-width: 100% !important;
+  overflow: hidden !important;
+  padding: 60px 20px !important;
+}
+
+.div-block.center,
+.div-block.access-2div {
+  max-width: 100% !important;
+  padding: 0 20px !important;
+}
+
+/* Fix divblock1 sections (Strategy, Testimonial) */
+.divblock1 {
+  max-width: 100% !important;
+  overflow: hidden !important;
+  margin-bottom: 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+.divblock1:last-child {
+  margin-bottom: 0 !important;
+}
+
+.divblock1 .priceheading {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.3 !important;
+}
+
+.divblock1 .pricetext {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  opacity: 0.9 !important;
+}
+
+.div-block-4 {
+  max-width: 100% !important;
+  overflow: hidden !important;
+  margin-bottom: 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+.div-block-4 .priceheading.priceheading2 {
+  font-size: clamp(20px, 4vw, 32px) !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.div-block-4 .pricetext {
+  font-size: 14px !important;
+  opacity: 0.7 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Mobile fixes */
+@media (max-width: 767px) {
+  .priceheading2 {
+    font-size: clamp(28px, 8vw, 48px) !important;
+  }
+
+  .infotext2 {
+    gap: 6px !important;
+    margin-bottom: 20px !important;
+    padding: 10px 0 !important;
+  }
+
+  .infotext2 .priceheading2 {
+    font-size: clamp(20px, 6vw, 36px) !important;
+  }
+
+  .infotext2 .pricetext {
+    font-size: 13px !important;
+  }
+
+  .feetext {
+    padding: 20px 16px !important;
+    gap: 20px !important;
+  }
+
+  .div-block-5 {
+    padding: 24px 16px !important;
+    gap: 24px !important;
+  }
+
+  .divblock1 {
+    margin-bottom: 16px !important;
+    gap: 10px !important;
+  }
+
+  .divblock1 .priceheading {
+    font-size: 16px !important;
+  }
+
+  .divblock1 .pricetext {
+    font-size: 14px !important;
+  }
+
+  .memberaccess {
+    padding: 40px 16px !important;
+  }
+
+  .div-block.center,
+  .div-block.access-2div {
+    padding: 0 16px !important;
+  }
+}
+
+@media (max-width: 479px) {
+  .priceheading2 {
+    font-size: clamp(24px, 9vw, 40px) !important;
+  }
+
+  .infotext2 .priceheading2 {
+    font-size: clamp(18px, 7vw, 32px) !important;
+  }
+
+  .feetext {
+    padding: 16px 12px !important;
+  }
+
+  .div-block-5 {
+    padding: 16px 12px !important;
+  }
+}
+
+/* ===================================
+   FIX AUTO-SCROLLING CAROUSEL - VERTICAL & FAST
+   =================================== */
+
+/* Vertical scrolling animation - bottom to top, FAST */
+@keyframes scroll-vertical-fast {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.images {
+  overflow: hidden !important;
+  height: 600px !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+.images-wrap {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+  animation: scroll-vertical-fast 20s linear infinite !important;
+  will-change: transform;
+}
+
+/* Pause on hover */
+.images-wrap:hover {
+  animation-play-state: paused !important;
+}
+
+/* Disable scrollbar */
+.images::-webkit-scrollbar,
+.images-wrap::-webkit-scrollbar {
+  display: none !important;
+}
+
+.images,
+.images-wrap {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+/* Image sizing for vertical scroll */
+.single-image {
+  flex: 0 0 auto !important;
+  width: 100% !important;
+  max-width: 400px !important;
+  margin: 0 auto !important;
+}
+
+.single-image img {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 16px !important;
+}
+
+@media (max-width: 767px) {
+  .images {
+    height: 500px !important;
+  }
+
+  .single-image {
+    max-width: 350px !important;
+  }
+}
+
+@media (max-width: 479px) {
+  .images {
+    height: 400px !important;
+  }
+
+  .single-image {
+    max-width: 300px !important;
+  }
+}
+
+/* ===================================
+   FIX MEET MEMBERS IMAGE SIZING
+   =================================== */
+
+/* Unified system for all member images */
+.member {
+  width: 100% !important;
+  height: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.member-image {
+  width: 100% !important;
+  height: 400px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  border-radius: 16px 16px 0 0 !important;
+  background: #000 !important;
+}
+
+.member-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+}
+
+/* Member wrapper - horizontal scroll */
+.member-wrapper {
+  overflow-x: hidden !important;
+  padding: 40px 0 !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+.members {
+  display: flex !important;
+  gap: 30px !important;
+  flex-wrap: nowrap !important;
+  animation: scroll-members 15s linear infinite !important;
+  will-change: transform;
+  padding: 0 20px !important;
+}
+
+/* Pause on hover */
+.members:hover {
+  animation-play-state: paused !important;
+}
+
+/* Member scroll animation */
+@keyframes scroll-members {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Each member card in horizontal scroll */
+.member {
+  flex: 0 0 auto !important;
+  min-width: 350px !important;
+  max-width: 350px !important;
+  position: relative !important;
+}
+
+/* Show member info on hover */
+.member .member-info {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  ) !important;
+  padding: 60px 20px 20px 20px !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
+  z-index: 10 !important;
+}
+
+.member:hover .member-info {
+  opacity: 1 !important;
+}
+
+.member .member-name,
+.member .member-social-info {
+  color: white !important;
+  text-align: center !important;
+  margin: 0 !important;
+}
+
+.member .member-name {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  margin-bottom: 8px !important;
+}
+
+.member .member-social-info {
+  font-size: 16px !important;
+  opacity: 0.9 !important;
+}
+
+@media (max-width: 991px) {
+  .member {
+    min-width: 300px !important;
+    max-width: 300px !important;
+  }
+
+  .member-image {
+    height: 350px !important;
+  }
+}
+
+@media (max-width: 479px) {
+  .member {
+    min-width: 280px !important;
+    max-width: 280px !important;
+  }
+
+  .members {
+    gap: 20px !important;
+  }
+
+  .member-image {
+    height: 300px !important;
+  }
+
+  .member-wrapper {
+    padding: 30px 0 !important;
+  }
+}
+
+/* ===================================
+   PERFORMANCE
+   =================================== */
+
+/* GPU acceleration only where needed */
+.button-primary,
+.member,
+.gallery-image {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Smooth transitions */
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+}

@@ -1,0 +1,20 @@
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_d2VsbC1tb2NjYXNpbi0yNi5jbGVyay5hY2NvdW50cy5kZXYk
+CLERK_SECRET_KEY=sk_test_MneQuNDL4fcuzGqeqJrnkKdAlk8zUhGRZo7OioQQGG
+
+NEXT_PUBLIC_SUPABASE_URL=https://herjyhkvtgmoazimibaa.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhlcmp5aGt2dGdtb2F6aW1pYmFhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM4ODI3MjIsImV4cCI6MjA3OTQ1ODcyMn0.KgswQpv2RPI550sfinw7vTCze9ijgsWTeb7NwUvBpMg
+SUPABASE_SERVICE_ROLE_KEY=sb_secret_hFsE3rZrIxkXr6z_Q_VX2g_ci8DBEC6
+
+# Database Connection Strings (for Supabase)
+POSTGRES_URL=postgresql://postgres:Onfroy1738!@db.herjyhkvtgmoazimibaa.supabase.co:5432/postgres
+POSTGRES_PRISMA_URL=postgresql://postgres:Onfroy1738!@db.herjyhkvtgmoazimibaa.supabase.co:5432/postgres?pgbouncer=true
+POSTGRES_URL_NON_POOLING=postgresql://postgres:Onfroy1738!@db.herjyhkvtgmoazimibaa.supabase.co:5432/postgres
+POSTGRES_USER=postgres
+POSTGRES_HOST=db.herjyhkvtgmoazimibaa.supabase.co
+POSTGRES_PASSWORD=Onfroy1738!
+POSTGRES_DATABASE=postgres
+
+# Webhook Secret - COPY THIS FROM CLERK DASHBOARD AFTER CREATING THE WEBHOOK ENDPOINT
+# URL will be: https://sirency.com/api/webhooks/clerk
+CLERK_WEBHOOK_SECRET=
+
