@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/webhooks/clerk",
+      "destination": "/api/webhooks/clerk"
+    }
+  ]
+}
+
