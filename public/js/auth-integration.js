@@ -162,26 +162,40 @@ const AUTH_STYLES = `
 /* Floating Widget Styles */
 #clerk-floating-widget {
     transition: all 0.3s ease;
+    display: inline-block;
 }
 
 .nav-login-btn {
     background: transparent;
     color: white;
-    padding: 8px 20px;
+    padding: 10px 24px;
     border-radius: 4px;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 14px;
     transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
+    margin-right: 15px; /* Spacing from Apply Button */
+    margin-top: 10px; /* Vertical Alignment fix */
 }
 
 .nav-login-btn:hover {
     background: rgba(255, 255, 255, 0.1);
-    border-color: white;
+    border-color: #0ca;
+    color: #0ca;
+}
+
+@media (max-width: 768px) {
+    .nav-login-btn {
+        margin-top: 15px;
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
 `;
 
@@ -210,17 +224,17 @@ async function loadClerk() {
             });
             console.log('Clerk loaded');
             
-            // Create the role selection modal
             createRoleModal(Clerk);
             
-            // Setup UI based on auth state
+            // Initial Check
             handleAuthUI(Clerk);
             
-            // Listen for sign outs to reset UI
+            // Re-check periodically to handle dynamic navbar changes or slow loads
+            setTimeout(() => handleAuthUI(Clerk), 500);
+            setTimeout(() => handleAuthUI(Clerk), 2000);
+            
             Clerk.addListener((payload) => {
-                if (!payload.user) {
-                    handleAuthUI(Clerk);
-                }
+                handleAuthUI(Clerk);
             });
 
         } catch (err) {
@@ -280,129 +294,121 @@ function createRoleModal(Clerk) {
     
     document.body.appendChild(modal);
     
-    // Add global functions for the onclick handlers
+    // Global handlers
     window.selectRole = (role, element) => {
         selectedRole = role;
-        
-        // Visual selection
         document.querySelectorAll('.role-btn').forEach(btn => btn.classList.remove('selected'));
         element.classList.add('selected');
-        
-        // Enable button
         const btn = document.getElementById('role-submit-btn');
         btn.classList.add('active');
         btn.textContent = `Continue as ${role.charAt(0).toUpperCase() + role.slice(1)}`;
     };
     
     window.proceedToAuth = () => {
-        const modal = document.getElementById('role-selection-modal');
-        modal.classList.remove('visible');
-        
-        // Pass metadata to Clerk sign up
+        document.getElementById('role-selection-modal').classList.remove('visible');
         Clerk.openSignUp({
-            unsafeMetadata: {
-                role: selectedRole,
-                source: 'sirency_web_v1'
-            },
+            unsafeMetadata: { role: selectedRole, source: 'sirency_web_v1' },
             afterSignUpUrl: '/401.html',
             afterSignInUrl: '/401.html'
         });
     };
     
     window.openDirectLogin = () => {
-        const modal = document.getElementById('role-selection-modal');
-        modal.classList.remove('visible');
-        Clerk.openSignIn({
-            afterSignInUrl: '/401.html'
-        });
+        document.getElementById('role-selection-modal').classList.remove('visible');
+        Clerk.openSignIn({ afterSignInUrl: '/401.html' });
     };
 
     window.showRoleModal = () => {
-        const modal = document.getElementById('role-selection-modal');
-        modal.classList.add('visible');
+        document.getElementById('role-selection-modal').classList.add('visible');
     };
     
-    // Close modal when clicking outside card
     modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            modal.classList.remove('visible');
-        }
+        if (e.target === modal) modal.classList.remove('visible');
     });
 }
 
 function handleAuthUI(Clerk) {
-    // Check if we're on the protected page
+    // 1. Handle Protected Page Logic
     const protectedContainer = document.getElementById('clerk-auth-container');
-    const buttonContainer = document.getElementById('clerk-button-container');
-    const message = document.getElementById('auth-message');
-
-    if (protectedContainer && buttonContainer) {
+    if (protectedContainer) {
+        // ... (existing logic for 401.html)
+        // Leaving this part mostly as is, assuming it was working locally
+        const buttonContainer = document.getElementById('clerk-button-container');
+        const message = document.getElementById('auth-message');
         if (Clerk.user) {
-            // User is signed in
-            const role = Clerk.user.publicMetadata?.role || Clerk.user.unsafeMetadata?.role || 'User';
+             const role = Clerk.user.publicMetadata?.role || Clerk.user.unsafeMetadata?.role || 'User';
             message.innerHTML = `Welcome back, <span style="color:#0ca">${Clerk.user.firstName || 'Creator'}</span><br><span style="font-size:0.8em; opacity:0.7">Role: ${role.toString().toUpperCase()}</span>`;
-            message.style.color = 'white';
-            
-            // Mount user button
             const userButton = document.createElement('div');
             userButton.style.marginTop = '20px';
             buttonContainer.innerHTML = '';
             buttonContainer.appendChild(userButton);
             Clerk.mountUserButton(userButton);
-            
-            // Show content based on role
-            // This is client-side only - real security happens on your API/Backend
-            if (role === 'staff') {
-                // Show staff dashboard link or content
-                const staffLink = document.createElement('div');
-                staffLink.innerHTML = '<a href="#" class="button-primary" style="margin-top:20px; display:inline-block">Access Staff Portal</a>';
-                buttonContainer.appendChild(staffLink);
-            } else {
-                // Show model dashboard
-                 const modelLink = document.createElement('div');
-                modelLink.innerHTML = '<a href="#" class="button-primary" style="margin-top:20px; display:inline-block">Go to Creator Dashboard</a>';
-                buttonContainer.appendChild(modelLink);
-            }
-            
         } else {
-            // User is signed out on protected page
-            message.textContent = 'Access Restricted. Please identify yourself.';
-            
-            const signInButton = document.createElement('button');
-            signInButton.textContent = 'Enter Portal';
-            signInButton.className = 'w-button'; 
-            signInButton.style.cssText = 'padding: 12px 30px; background-color: #0ca; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;';
-            signInButton.onclick = () => window.showRoleModal();
-            
-            buttonContainer.innerHTML = '';
-            buttonContainer.appendChild(signInButton);
+             message.textContent = 'Access Restricted. Please identify yourself.';
+             const signInButton = document.createElement('button');
+             signInButton.textContent = 'Enter Portal';
+             signInButton.className = 'w-button';
+             signInButton.style.cssText = 'padding: 12px 30px; background-color: #0ca; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;';
+             signInButton.onclick = () => window.showRoleModal();
+             buttonContainer.innerHTML = '';
+             buttonContainer.appendChild(signInButton);
         }
         return;
     }
 
-    // Standard Navbar Integration
-    // Target the container we added in the HTML directly
-    const authWidget = document.getElementById('clerk-floating-widget');
+    // 2. FORCE INSERT INTO NAVBAR (The aggressive fix)
     
+    // Try to find the container I manually added in HTML
+    let authWidget = document.getElementById('clerk-floating-widget');
+    
+    // If NOT found, let's find the "Apply Now" button and insert before it
+    if (!authWidget) {
+        console.log('Clerk Widget container not found, attempting injection...');
+        // Selector for the list item containing the Apply Now button
+        // Based on the HTML structure: <li class="mobile-margin-top-10"><a ... class="button-primary ...">Apply now</a></li>
+        const applyBtn = document.querySelector('a.button-primary'); // Using generic class to catch it
+        
+        if (applyBtn && applyBtn.parentNode) {
+            console.log('Found Apply Button, injecting Login Button...');
+            
+            // Create a wrapper if it doesn't exist to hold both buttons side-by-side
+            let wrapper = applyBtn.parentNode.querySelector('.auth-wrapper');
+            if (!wrapper) {
+                wrapper = document.createElement('div');
+                wrapper.className = 'auth-wrapper';
+                wrapper.style.display = 'flex';
+                wrapper.style.alignItems = 'center';
+                // Move Apply button into wrapper
+                applyBtn.parentNode.insertBefore(wrapper, applyBtn);
+                wrapper.appendChild(applyBtn);
+            }
+            
+            // Create our widget container
+            authWidget = document.createElement('div');
+            authWidget.id = 'clerk-floating-widget';
+            // Insert it at the start of the wrapper (before Apply button)
+            wrapper.insertBefore(authWidget, wrapper.firstChild);
+        }
+    }
+
     if (authWidget) {
+        authWidget.innerHTML = ''; // Clear current content
+        
         if (Clerk.user) {
-            const userButton = document.createElement('div');
-            authWidget.innerHTML = '';
-            authWidget.appendChild(userButton);
-            Clerk.mountUserButton(userButton);
+            // User Logged In: Show Avatar
+            const userButtonDiv = document.createElement('div');
+            userButtonDiv.style.marginRight = '15px';
+            authWidget.appendChild(userButtonDiv);
+            Clerk.mountUserButton(userButtonDiv);
         } else {
+            // User Logged Out: Show Login Text Button
             const signInButton = document.createElement('button');
-            signInButton.innerHTML = 'LOGIN';
-            signInButton.className = 'nav-login-btn';
-            
+            signInButton.textContent = 'LOGIN';
+            signInButton.className = 'nav-login-btn'; // Uses the styles defined at top
             signInButton.onclick = () => window.showRoleModal();
-            
-            authWidget.innerHTML = '';
             authWidget.appendChild(signInButton);
         }
     } else {
-        // Fallback if widget container not found in HTML (legacy or other pages)
-        const navbar = document.querySelector('.navbar-wrapper') || document.body;
-        // ... (rest of dynamic creation logic if needed, but prefer explicit placement)
+        console.warn('Could not find a place to inject the Login button in the Navbar.');
     }
 }
